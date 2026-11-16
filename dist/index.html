@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#6aafe1">
-  <title>Sunboy Blinds — A brighter outlook</title>
-  <meta name="description" content="Meet Sunboy Blinds. A fresh look for your windows and a brighter outlook for your home.">
+  <title>Sunboy Blinds — Tampa Bay Window Treatment Experts</title>
+  <meta name="description" content="Professional #1 Window Treatment Experts for Tampa Bay Area. Meet Sunboy Blinds.">
   <link rel="stylesheet" href="/styles.css">
   <script src="/app.js" defer></script>
 </head>
@@ -13,8 +13,18 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="navbar">
     <a class="logo" href="/" aria-label="Sunboy Blinds home"><img src="/assets/sunboy-logo.png" alt="Sunboy Blinds" width="1408" height="684"></a>
-    <span class="nav-motto">A brighter outlook.</span>
-    <nav aria-label="Main navigation"><button class="film-link" data-open-film>Watch the film <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></button></nav>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <button class="nav-item" data-open-info="treatments">Indoor / Outdoor</button>
+      <button class="nav-item" data-open-info="about">About</button>
+      <button class="nav-item" data-open-info="service-area">Service Area</button>
+    </nav>
+    <button class="sunboy-button" data-open-film>See it in action</button>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
+      <button class="nav-item" data-open-info="treatments">Indoor / Outdoor</button>
+      <button class="nav-item" data-open-info="about">About</button>
+      <button class="nav-item" data-open-info="service-area">Service Area</button>
+    </nav>
   </header>
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
@@ -22,19 +32,20 @@
       <video class="hero-video" id="hero-video" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
       <div class="hero-shade" aria-hidden="true"></div>
       <div class="hero-copy">
-        <p class="eyebrow"><span aria-hidden="true">✳</span> Meet Sunboy Blinds</p>
-        <h1 id="hero-title">Hello,<br><em>sunshine.</em></h1>
-        <p class="hero-intro">A fresh look for your windows.<br>A whole new feeling for your home.</p>
-        <button class="hero-cta" data-open-film><span class="play-circle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 11 7-11 7z"/></svg></span><span>See the light</span><svg class="cta-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></button>
+        <h1 id="hero-title">Professional #1<br>Window Treatment<br>Experts for<br>Tampa Bay Area.</h1>
       </div>
-      <div class="hero-bottom"><span class="bottom-note">Good light. Good days.</span><button class="motion-control" id="motion-control" aria-label="Play background video" aria-pressed="false"><svg class="pause-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6v12M15 6v12"/></svg><svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 11 7-11 7z"/></svg><span id="motion-label">Play video</span></button></div>
+      <div class="hero-bottom"><button class="motion-control" id="motion-control" aria-label="Play background video" aria-pressed="false"><svg class="pause-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6v12M15 6v12"/></svg><svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 11 7-11 7z"/></svg><span id="motion-label">Play video</span></button></div>
     </section>
   </main>
   <footer><span>Sunboy Blinds</span><a href="/accessibility/">Accessibility</a></footer>
   <dialog id="film-dialog" aria-labelledby="film-title">
-    <div class="film-heading"><h2 id="film-title">See the light.</h2><button id="close-film" aria-label="Close film"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div>
+    <div class="film-heading"><h2 id="film-title">Sunboy in action.</h2><button id="close-film" aria-label="Close film"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div>
     <video id="full-film" controls playsinline preload="none" poster="/assets/hero-desktop.webp" aria-label="Window shades in a kitchen, living room and dining room"></video>
     <p>Window shades in a kitchen, living room and dining room. This film has no sound.</p>
+  </dialog>
+  <dialog class="info-dialog" id="info-dialog" aria-labelledby="info-title">
+    <div class="film-heading"><h2 id="info-title"></h2><button id="close-info" aria-label="Close details"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div>
+    <div id="info-content"></div>
   </dialog>
 </body>
 </html>

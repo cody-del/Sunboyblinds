@@ -5,6 +5,9 @@ const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
 const mobile = matchMedia('(max-width: 700px)');
 const dialog = document.querySelector('#film-dialog');
 const film = document.querySelector('#full-film');
+const infoDialog = document.querySelector('#info-dialog');
+const menuToggle = document.querySelector('#menu-toggle');
+const mobileNav = document.querySelector('#mobile-nav');
 let wantsPlayback = !reducedMotion.matches && !navigator.connection?.saveData;
 let heroVisible = true;
 let dialogTrigger;
@@ -23,7 +26,7 @@ function ensureSource() {
   }
 }
 function syncPlayback() {
-  if (wantsPlayback && heroVisible && !document.hidden && !dialog.open) {
+  if (wantsPlayback && heroVisible && !document.hidden && !dialog.open && !infoDialog.open) {
     ensureSource();
     background.play().catch(updateMotionLabel);
   } else background.pause();
@@ -50,6 +53,7 @@ if (background) {
   syncPlayback();
 }
 document.querySelectorAll('[data-open-film]').forEach(button => button.addEventListener('click', () => {
+  closeMenu();
   dialogTrigger = button;
   if (!film.hasAttribute('src')) film.src = '/assets/hero-desktop.mp4';
   dialog.showModal();
@@ -67,4 +71,45 @@ dialog?.addEventListener('close', () => {
   film.pause();
   syncPlayback();
   dialogTrigger?.focus();
+});
+
+function closeMenu() {
+  mobileNav.hidden = true;
+  menuToggle.setAttribute('aria-expanded', 'false');
+  menuToggle.setAttribute('aria-label', 'Open navigation menu');
+}
+menuToggle.addEventListener('click', () => {
+  const opening = mobileNav.hidden;
+  mobileNav.hidden = !opening;
+  menuToggle.setAttribute('aria-expanded', String(opening));
+  menuToggle.setAttribute('aria-label', opening ? 'Close navigation menu' : 'Open navigation menu');
+});
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && !mobileNav.hidden) {
+    closeMenu();
+    menuToggle.focus();
+  }
+});
+document.addEventListener('click', event => {
+  if (!event.target.closest('.navbar')) closeMenu();
+});
+const navigationContent = {
+  treatments: {title:'Indoor / Outdoor', html:'<div class="treatment-options"><section><h3>Indoor</h3><p>Window treatments for your home.</p></section><section><h3>Outdoor</h3><p>Shade for your outdoor space.</p></section></div>'},
+  about: {title:'Sunboy Blinds', html:'<p>Professional window treatment experts for the Tampa Bay Area.</p>'},
+  'service-area': {title:'Service Area', html:'<p>Serving the Tampa Bay Area.</p>'}
+};
+let infoTrigger;
+document.querySelectorAll('[data-open-info]').forEach(button => button.addEventListener('click', () => {
+  const content = navigationContent[button.dataset.openInfo];
+  infoTrigger = mobileNav.contains(button) ? menuToggle : button;
+  closeMenu();
+  document.querySelector('#info-title').textContent = content.title;
+  document.querySelector('#info-content').innerHTML = content.html;
+  infoDialog.showModal();
+  background.pause();
+}));
+document.querySelector('#close-info').addEventListener('click', () => infoDialog.close());
+infoDialog.addEventListener('close', () => {
+  syncPlayback();
+  infoTrigger?.focus();
 });
