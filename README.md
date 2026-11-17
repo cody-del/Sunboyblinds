@@ -17,3 +17,7 @@ The section pendant is the supplied sunboy-badge-blue SVG with a white circle in
 Trust points: Professional installation, Quick turnaround times, and No subcontractors were supplied by the user. The tentative satisfaction guarantee was rendered as “Your satisfaction comes first”; no warranty terms or turnaround duration were invented.
 
 The form has labeled name, email, phone, ZIP, interest, and optional project-detail fields, autocomplete attributes and native validation. The submit control is disabled and a submit handler prevents navigation until a real destination is supplied. It does not store, send, or claim to submit requests.
+
+The section background is now white and the form panel uses the exact logo blue (#6DB2E4), dark ink labels and white fields. Its submit button is white with dark text.
+
+The pendant now uses the supplied sunboy-sunseal-blue SVG. The ray and face artwork are separated into matched 700×700 SVG layers. Rays rotate around the shared viewBox center on a 45-second loop; the face and blue circular frame never transform. The white circle has radius 247, inside the fixed blue frame outer radius 252. A dedicated keyboard-operable pause control stops/resumes the rays. Reduced-motion preferences start the sun paused; offscreen/hidden pages also pause it. The SVG in outputs is a static, white-backed editable version with named ray/face groups.

@@ -39,3 +39,12 @@ Latest centered hero: two CTA designs and the requested Google/Facebook five-sta
 - Verified hero CTA navigation to the form. Filled the form with synthetic data: invalid email and ZIP were detected, valid replacements cleared the invalid fields. No requests were sent.
 - Destination remains unknown. Form submission remains disabled with a submit guard; no fake success state or external side effects.
 - New full-page desktop and mobile screenshots saved. Screen-reader and real browser zoom checks remain untested; existing prototype limitations remain.
+
+## Sun seal and section colors — November 16, 2026
+
+- White section background and exact logo-blue form panel verified from rendered styles; form copy uses dark ink and inputs remain white. Dark form text on blue exceeds 4.5:1, and the input borders exceed 3:1 against blue. The existing hero-button contrast limitation is unchanged.
+- New supplied seal separated into outer rays and stationary face/frame SVG layers, both sharing viewBox 1.3 83.7 700 700. White backing radius 247 stays inside the fixed blue ring radius 252 and scales in the same coordinate system.
+- Browser confirmed ray transform is an animated matrix and face transform is none. Enter toggles Pause animation / Play animation, and animation state switches running / paused independently of the face.
+- At 320px the pendant wrapper is 148×148, the consultation anchor leaves the full seal visible, and no horizontal overflow occurs. Control/trust spacing and video-control clearance checked.
+- Reduced motion is implemented through the shared matchMedia setting and preference-change listener; a real OS preference change was not exercised. Native pause/resume was tested.
+- Screen-reader review remains untested; form routing is still unconfigured and submission disabled.

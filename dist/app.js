@@ -121,3 +121,28 @@ infoDialog.addEventListener('close', () => {
 document.querySelector('#consultation-form').addEventListener('submit', event => {
   event.preventDefault();
 });
+
+const sunPendant = document.querySelector('.section-pendant');
+const sunMotionToggle = document.querySelector('#sun-motion-toggle');
+let wantsSunMotion = !reducedMotion.matches;
+let sunIsVisible = false;
+
+function syncSunMotion() {
+  sunPendant.dataset.sunPlaying = String(wantsSunMotion && sunIsVisible && !document.hidden);
+  sunMotionToggle.setAttribute('aria-pressed', String(wantsSunMotion));
+  sunMotionToggle.textContent = wantsSunMotion ? 'Pause animation' : 'Play animation';
+}
+sunMotionToggle.addEventListener('click', () => {
+  wantsSunMotion = !wantsSunMotion;
+  syncSunMotion();
+});
+reducedMotion.addEventListener('change', () => {
+  wantsSunMotion = !reducedMotion.matches;
+  syncSunMotion();
+});
+document.addEventListener('visibilitychange', syncSunMotion);
+new IntersectionObserver(([entry]) => {
+  sunIsVisible = entry.isIntersecting;
+  syncSunMotion();
+}, {threshold:0.1}).observe(sunPendant);
+syncSunMotion();
