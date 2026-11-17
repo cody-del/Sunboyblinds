@@ -94,7 +94,9 @@ document.addEventListener('click', event => {
   if (!event.target.closest('.navbar')) closeMenu();
 });
 const navigationContent = {
-  treatments: {title:'Indoor / Outdoor', html:'<div class="treatment-options"><section><h3>Indoor</h3><p>Window treatments for your home.</p></section><section><h3>Outdoor</h3><p>Shade for your outdoor space.</p></section></div>'},
+  indoor: {title:'Indoor', html:'<p>Window treatments for your home.</p>'},
+  outdoor: {title:'Outdoor', html:'<p>Shade for your outdoor space.</p>'},
+  services: {title:'Services', html:'<p>Indoor window treatments and outdoor shade in the Tampa Bay area.</p>'},
   about: {title:'Sunboy Blinds', html:'<p>Professional window treatment experts for the Tampa Bay Area.</p>'},
   'service-area': {title:'Service Area', html:'<p>Serving the Tampa Bay Area.</p>'}
 };

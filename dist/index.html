@@ -6,22 +6,27 @@
   <meta name="theme-color" content="#6db2e4">
   <title>Sunboy Blinds — Tampa Bay Window Treatment Experts</title>
   <meta name="description" content="#1 Window Treatment Experts for the Tampa Bay area. Meet Sunboy Blinds.">
-  <link rel="stylesheet" href="/styles.css">
-  <script src="/app.js" defer></script>
+  <link rel="preload" href="/assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/styles.css?v=nav-manrope-1">
+  <script src="/app.js?v=nav-manrope-1" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="navbar">
     <a class="logo" href="/" aria-label="Sunboy Blinds home"><img src="/assets/sunboy-logo.png" alt="Sunboy Blinds" width="1408" height="684"></a>
     <nav class="desktop-nav" aria-label="Main navigation">
-      <button class="nav-item" data-open-info="treatments">Indoor / Outdoor</button>
+      <button class="nav-item" data-open-info="indoor">Indoor</button>
+      <button class="nav-item" data-open-info="outdoor">Outdoor</button>
+      <button class="nav-item" data-open-info="services">Services</button>
       <button class="nav-item" data-open-info="about">About</button>
       <button class="nav-item" data-open-info="service-area">Service Area</button>
     </nav>
     <button class="sunboy-button" data-open-film>See it in action</button>
     <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
     <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
-      <button class="nav-item" data-open-info="treatments">Indoor / Outdoor</button>
+      <button class="nav-item" data-open-info="indoor">Indoor</button>
+      <button class="nav-item" data-open-info="outdoor">Outdoor</button>
+      <button class="nav-item" data-open-info="services">Services</button>
       <button class="nav-item" data-open-info="about">About</button>
       <button class="nav-item" data-open-info="service-area">Service Area</button>
     </nav>
