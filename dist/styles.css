@@ -50,7 +50,7 @@ h1{font-size:clamp(19px,5.3vw,84px);font-weight:700;letter-spacing:-.045em;line-
 .motion-control .play-icon{fill:currentColor;stroke:0;width:15px}
 footer{display:flex;justify-content:space-between;align-items:center;padding:24px clamp(32px,4.2vw,82px);font-size:11px}
 footer a{padding:10px 0}
-.consultation-section{position:relative;background:#fff;padding:164px max(32px,calc((100% - 1120px)/2)) 104px;scroll-margin-top:112px}
+.consultation-section{position:relative;background:var(--sky);padding:164px max(32px,calc((100% - 1120px)/2)) 104px;scroll-margin-top:112px}
 .section-pendant{position:absolute;left:50%;top:0;transform:translate(-50%,-50%);width:196px;height:auto;aspect-ratio:1;display:block;z-index:2;pointer-events:none}
 .sun-rays,.sun-face{position:absolute;inset:0;display:block;width:100%;height:100%}
 .sun-rays{transform-origin:50% 50%;animation:sun-turn 45s linear infinite;animation-play-state:paused}
@@ -62,9 +62,9 @@ footer a{padding:10px 0}
 .consultation-layout{display:grid;grid-template-columns:1fr 1.12fr;gap:88px;align-items:center}
 .trust-copy h2{font-size:clamp(40px,4.3vw,64px);font-weight:600;line-height:1.08;letter-spacing:-.05em;margin:0 0 32px}
 .trust-list{list-style:none;padding:0;margin:0}
-.trust-list li{display:flex;align-items:center;gap:16px;padding:20px 0;border-bottom:1px solid #d5dedf;font-size:18px;font-weight:500;line-height:1.4}
+.trust-list li{display:flex;align-items:center;gap:16px;padding:20px 0;border-bottom:1px solid #173d5233;font-size:18px;font-weight:500;line-height:1.4}
 .trust-list li:last-child{border-bottom:0}
-.trust-list svg{width:25px;height:25px;flex-shrink:0;fill:none;stroke:#36749c;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.trust-list svg{width:25px;height:25px;flex-shrink:0;fill:none;stroke:var(--ink);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .consultation-card{background:var(--sky);color:var(--ink);border:1px solid var(--sky);border-radius:24px;padding:36px;font-family:"Manrope",Arial,sans-serif}
 .consultation-card h3{font-size:28px;font-weight:600;letter-spacing:-.045em;line-height:1.2;margin:0 0 10px}
 .consultation-card>p{font-size:14px;line-height:1.6;color:var(--ink);margin:0 0 26px}

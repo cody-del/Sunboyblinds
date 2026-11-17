@@ -48,3 +48,9 @@ Latest centered hero: two CTA designs and the requested Google/Facebook five-sta
 - At 320px the pendant wrapper is 148×148, the consultation anchor leaves the full seal visible, and no horizontal overflow occurs. Control/trust spacing and video-control clearance checked.
 - Reduced motion is implemented through the shared matchMedia setting and preference-change listener; a real OS preference change was not exercised. Native pause/resume was tested.
 - Screen-reader review remains untested; form routing is still unconfigured and submission disabled.
+
+## Full blue consultation section — November 17, 2026
+
+- Section background now shares the same #6DB2E4 variable as the form and sun. Dark ink trust text/checks and white inputs remain readable; dividers use a subtle ink tint.
+- Rendered styles confirmed matching RGB 109, 178, 228 section/form backgrounds at 1280px and 320px, white fields, and no horizontal overflow.
+- Scope limited to colors and CSS revision. Animation, form behavior and existing prototype limitations are unchanged.
