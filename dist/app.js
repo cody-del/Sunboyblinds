@@ -115,3 +115,9 @@ infoDialog.addEventListener('close', () => {
   syncPlayback();
   infoTrigger?.focus();
 });
+
+// Until the consultation destination is supplied, keep the visual form local.
+// The disabled submit control and submit guard prevent sending personal data.
+document.querySelector('#consultation-form').addEventListener('submit', event => {
+  event.preventDefault();
+});

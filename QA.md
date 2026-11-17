@@ -29,3 +29,13 @@ Latest centered hero: two CTA designs and the requested Google/Facebook five-sta
 - Verified Indoor, Outdoor and Services using Enter, Escape dismissal, and focus return. Mobile Services returns focus to the closed menu toggle.
 - Added matching CSS/JavaScript asset revisions so older cached navigation logic is refreshed with the new labels.
 - Scoped change: navigation only. Hero copy, hero typography, video and button colors are unchanged. Previously recorded prototype limits remain.
+
+## Pendant and consultation section — November 16, 2026
+
+- Inserted a white circle (351, 434; radius 240) underneath the existing blue vector artwork. The shared 510×510 viewBox ensures backing/artwork scale together. The backing is inset from the outer badge extent; there is no separate CSS backing to drift at breakpoints.
+- Displayed the SVG as a 164px desktop pendant overlapping the hero/section boundary; observed a square 118px badge on 320px mobile.
+- Added left trust list and right form; stacked them on mobile. No horizontal overflow at 320px, and input fields remain inside the form card.
+- Moved the narrow-mobile video pause control above the pendant so their bounds do not overlap. Decorative pendant ignores pointer events.
+- Verified hero CTA navigation to the form. Filled the form with synthetic data: invalid email and ZIP were detected, valid replacements cleared the invalid fields. No requests were sent.
+- Destination remains unknown. Form submission remains disabled with a submit guard; no fake success state or external side effects.
+- New full-page desktop and mobile screenshots saved. Screen-reader and real browser zoom checks remain untested; existing prototype limitations remain.
