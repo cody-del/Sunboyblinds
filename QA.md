@@ -150,3 +150,10 @@ Latest centered hero: two CTA designs and the requested Google/Facebook five-sta
 - Matched the mobile menu panel and menu toggle to navy/white. At 1280px and 320px, rendered styles match the intended colors and there is no horizontal overflow. The accessibility-page header uses the same navy background with white Back to home text.
 - At 320px, the menu opens, Enter activates Indoor, Escape dismisses its dialog and focus returns to the menu toggle. Checked the visible desktop and expanded mobile navigation.
 - Git whitespace checks passed. Scope is the navigation theme; no full-site accessibility audit or screen-reader session was performed. Existing prototype form/contact limitations remain unchanged.
+
+## White header and consistent baby-blue buttons — November 18, 2026
+
+- Restored the white navbar, original blue logo styling and navy navigation text, including the mobile menu. Shared header CSS also applies to the accessibility page. Footer remains navy.
+- Removed the navbar's darker button colors and the shared blue-button gradient overlays. Header, hero and footer blue CTA backgrounds now all use the existing --sky value #6DB2E4; hover adds a text underline without changing the fill.
+- Browser checks at 1280px confirmed all three blue buttons render RGB 109,178,228 with no background image. Header is white, text is navy and logo has no filter. At 320px, the opened mobile menu is white/navy, the header button remains the same blue, and document width equals viewport width.
+- Git whitespace checks passed. This restores the user's exact requested light-blue/white-text combination; the previously recorded approximately 2.3:1 white-text contrast limitation remains. No accessibility conformance claim, screen-reader session or full-site audit is implied. Existing form/contact limitations remain unchanged.

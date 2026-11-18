@@ -9,20 +9,15 @@ button svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.6
 button:focus-visible,a:focus-visible{outline:3px solid #f5c85a;outline-offset:6px}
 .skip-link{position:absolute;left:24px;top:-100px;z-index:20;padding:16px;background:white;color:var(--ink)}
 .skip-link:focus{top:12px}
-.navbar{position:absolute;left:clamp(18px,3.2vw,64px);right:clamp(18px,3.2vw,64px);top:0;z-index:3;height:92px;background:var(--ink);color:#fff;isolation:isolate;border-radius:0 0 28px 28px;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:14px clamp(24px,2.7vw,48px);font-family:"Manrope",Arial,sans-serif}
+.navbar{position:absolute;left:clamp(18px,3.2vw,64px);right:clamp(18px,3.2vw,64px);top:0;z-index:3;height:92px;background:#fff;color:var(--ink);border-radius:0 0 28px 28px;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:14px clamp(24px,2.7vw,48px);font-family:"Manrope",Arial,sans-serif}
 .logo{display:block;position:relative;width:166px;aspect-ratio:2.97;overflow:hidden;flex-shrink:0}
 .logo img{position:absolute;width:104.45%;height:auto;max-width:none;left:-1.04%;top:-22.5%}
 .desktop-nav{display:flex;align-items:center;justify-content:center;gap:clamp(22px,2.2vw,36px);margin-left:auto;margin-right:auto}
 .nav-item{background:transparent;color:inherit;font-size:15px;font-weight:600;letter-spacing:0;line-height:1.4;padding:14px 0;min-height:44px;white-space:nowrap;text-decoration:none;text-underline-offset:6px}
 .nav-item:hover{text-decoration:underline}
-.sunboy-button{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;flex-shrink:0;position:relative;background:var(--sky);color:var(--white);padding:14px 24px 15px;border-radius:999px;min-height:48px;font-size:13px;font-weight:700;box-shadow:none;background-image:radial-gradient(ellipse at 50% 0%,#ffffff16,transparent 70%)}
-.sunboy-button:hover{background-image:radial-gradient(ellipse at 50% 30%,#ffffff30,transparent 75%)}
-.sunboy-button:active{background-image:radial-gradient(ellipse at 50% 50%,#ffffff16,transparent 75%)}
-.navbar .logo img{filter:grayscale(1) invert(1) brightness(5);mix-blend-mode:screen}
-.navbar .sunboy-button{background:#3278a5;background-image:none;color:#fff}
-.navbar .sunboy-button:hover{background:#2b6d98;background-image:none}
-.navbar .sunboy-button:active{background:#265f86;background-image:none}
-.navbar .menu-toggle{color:#fff}
+.sunboy-button{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;flex-shrink:0;position:relative;background:var(--sky);color:var(--white);padding:14px 24px 15px;border-radius:999px;min-height:48px;font-size:13px;font-weight:700;box-shadow:none;background-image:none}
+.sunboy-button:hover{background-image:none;text-decoration:underline;text-underline-offset:3px}
+.sunboy-button:active{background-image:none}
 .menu-toggle,.mobile-nav{display:none}
 .hero{position:relative;isolation:isolate;min-height:760px;height:100svh;max-height:1200px;overflow:hidden;background:#24342c;color:white}
 .hero-poster,.hero-video,.hero-shade{position:absolute;inset:0;width:100%;height:100%;z-index:-3}
@@ -145,7 +140,7 @@ dialog p{font-size:12px;line-height:1.5;margin:16px 4px 0}
 .menu-toggle span{display:block;width:22px;height:2px;background:currentColor;transition:transform .18s}
 .menu-toggle[aria-expanded=true] span:first-child{transform:translateY(4px) rotate(45deg)}
 .menu-toggle[aria-expanded=true] span:last-child{transform:translateY(-4px) rotate(-45deg)}
-.mobile-nav:not([hidden]){position:absolute;top:calc(100% + 8px);left:0;right:0;display:flex;flex-direction:column;align-items:stretch;gap:0;padding:16px 24px;background:var(--ink);color:#fff;border-radius:18px;box-shadow:0 15px 40px #112d3233}
+.mobile-nav:not([hidden]){position:absolute;top:calc(100% + 8px);left:0;right:0;display:flex;flex-direction:column;align-items:stretch;gap:0;padding:16px 24px;background:#fff;color:var(--ink);border-radius:18px;box-shadow:0 15px 40px #112d3233}
 .mobile-nav .nav-item{text-align:left;font-size:17px;font-weight:600;padding:15px 0}
 }
 @media(max-width:760px){

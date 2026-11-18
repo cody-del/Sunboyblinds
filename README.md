@@ -34,4 +34,4 @@ The homepage product section contains Shades, Blinds, Shutters and Exterior Shad
 
 A shared classic navy footer appears on the homepage and accessibility page. It includes the supplied logo rendered white with CSS, product anchors, existing-page navigation, a consultation CTA and a copyright/accessibility row. Phone, email, street address, social profiles and policy links are omitted because no verified destinations have been supplied.
 
-The navbar now matches the footer navy (#15384D), with white logo styling and navigation text, including the mobile menu and accessibility-page header. Its flat blue button uses #3278A5 with white text (approximately 4.8:1 contrast); the other buttons retain their existing styles.
+The navbar is white with the original blue logo and navy text, including the mobile menu and accessibility-page header. The blue buttons in the navbar, hero and footer all use the same flat logo blue #6DB2E4 through the shared --sky variable, including hover/active states. The form uses its existing white submit style.
