@@ -120,3 +120,10 @@ Latest centered hero: two CTA designs and the requested Google/Facebook five-sta
 - Recolored the supplied desktop heading artwork and its two-line mobile derivative to #15384D, matching the section's ink text. The white originals and Downloads source are unchanged.
 - Preserved heading wording, HTML accessible name, artwork geometry, responsive layout, trust icons and form labels. No all-fields-required introduction was reintroduced.
 - Both navy SVGs parse successfully; their path data is identical to the corresponding white artwork. Git whitespace checks passed.
+
+## Four-category product section — November 18, 2026
+
+- Added an informational product section after the consultation area with the user-requested Shades, Blinds, Shutters and Exterior Shades labels. Labels and headings are literal HTML. Original SVG window illustrations use the Sunboy palette and do not represent specific manufacturer products or installations.
+- Kept the section white, with four equal desktop columns and two columns at 860px and below. No new buttons, product-page placeholders, animation or unsupported product claims were introduced.
+- Browser checks at 1280px confirmed four 262px columns at the same vertical position. At 320px, the grid has two 129px columns, all labels fit and document width equals viewport width. All four illustration assets load.
+- SVG XML and Git whitespace checks passed. This was a scoped visual/responsive check; no screen-reader session or full-site accessibility audit was performed. Existing form and contact limitations remain unchanged.

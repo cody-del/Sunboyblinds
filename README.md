@@ -29,3 +29,5 @@ The current trust illustrations are white SVG paths with transparent cutouts, co
 The form now marks Full name with a visible asterisk, replacing the all-fields-required introduction; Email and Phone have plain labels. Native required attributes and validation remain; decorative asterisks are hidden from assistive technology to avoid duplicate required announcements.
 
 The section heading displays the supplied lettering in navy #15384D via sunboy-cta-schedule-navy.svg. A mobile derivative uses the same paths on two centered lines; the original file remains unchanged. The H2 retains the exact heading words in a visually hidden HTML span and the artwork is decorative.
+
+The homepage product section contains Shades, Blinds, Shutters and Exterior Shades in a four-column desktop row and a two-column mobile grid. Its original SVG window illustrations use the Sunboy palette, with category names in HTML. The section is informational; no product destinations are implied. Netlify publishes dist automatically from GitHub main.
