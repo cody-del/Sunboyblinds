@@ -162,3 +162,10 @@ Latest centered hero: two CTA designs and the requested Google/Facebook five-sta
 
 - Changed Request Consultation beneath the form to the shared navy #15384D with white lettering, including hover and active fill. Other button colors are unchanged.
 - Color-only change; sizing, layout, native validation and the existing disabled submission state remain. Git whitespace checks passed.
+
+## Navbar consultation link — November 18, 2026
+
+- Replaced See it in action with a native Book a Consultation anchor targeting the existing homepage consultation section. It no longer opens the film dialog. The link closes an expanded mobile menu before navigating.
+- Adjusted navbar CTA spacing below 400px and logo/button widths below 340px so the longer label fits. At 320px, the menu's right edge is 292px inside a 304px header boundary; document width equals viewport width. Also checked 390px and 1280px without horizontal overflow.
+- Keyboard Enter reached #consultation on desktop and mobile. The mobile menu was closed afterward and the film dialog remained closed. JavaScript syntax and Git whitespace checks passed.
+- Updated the accessibility-page Escape instruction to refer to dialogs. Existing form submission remains disabled until a destination is configured; navigation to the form is functional. This was a scoped interaction/layout check, not a full accessibility audit or screen-reader session.

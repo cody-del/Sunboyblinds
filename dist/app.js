@@ -79,6 +79,7 @@ function closeMenu() {
   menuToggle.setAttribute('aria-expanded', 'false');
   menuToggle.setAttribute('aria-label', 'Open navigation menu');
 }
+document.querySelector('#nav-consultation-button')?.addEventListener('click', closeMenu);
 menuToggle.addEventListener('click', () => {
   const opening = mobileNav.hidden;
   mobileNav.hidden = !opening;

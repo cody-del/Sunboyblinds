@@ -164,4 +164,6 @@ dialog{padding:14px;border-radius:14px}
 .info-dialog{padding:22px}.treatment-options{grid-template-columns:1fr}
 }
 @media(max-width:380px){.navbar{padding:12px;gap:8px}.logo{width:112px}.sunboy-button{font-size:10px;padding:12px;min-height:40px}.menu-toggle{width:28px}.hero-copy{left:16px;right:16px}h1{font-size:19px}.hero-actions{gap:10px}.hero-actions .sunboy-button{padding:15px 14px;font-size:11px}.call-button{padding:14px 16px;font-size:11px}.review-badges{gap:20px}.review-name{font-size:9px}}
+@media(max-width:400px){.navbar .sunboy-button{font-size:10px;padding:12px 10px}}
+@media(max-width:340px){.navbar .logo{width:104px}.navbar .sunboy-button{padding-left:8px;padding-right:8px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
