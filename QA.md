@@ -157,3 +157,8 @@ Latest centered hero: two CTA designs and the requested Google/Facebook five-sta
 - Removed the navbar's darker button colors and the shared blue-button gradient overlays. Header, hero and footer blue CTA backgrounds now all use the existing --sky value #6DB2E4; hover adds a text underline without changing the fill.
 - Browser checks at 1280px confirmed all three blue buttons render RGB 109,178,228 with no background image. Header is white, text is navy and logo has no filter. At 320px, the opened mobile menu is white/navy, the header button remains the same blue, and document width equals viewport width.
 - Git whitespace checks passed. This restores the user's exact requested light-blue/white-text combination; the previously recorded approximately 2.3:1 white-text contrast limitation remains. No accessibility conformance claim, screen-reader session or full-site audit is implied. Existing form/contact limitations remain unchanged.
+
+## Navy consultation submit button — November 18, 2026
+
+- Changed Request Consultation beneath the form to the shared navy #15384D with white lettering, including hover and active fill. Other button colors are unchanged.
+- Color-only change; sizing, layout, native validation and the existing disabled submission state remain. Git whitespace checks passed.

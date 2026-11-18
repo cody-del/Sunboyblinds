@@ -18,7 +18,7 @@ Trust points: Professional installation, Quick turnaround times, and No subcontr
 
 The homepage form has exactly three labeled fields: full name, email and phone, with autocomplete attributes and native validation. Its button reads “Request Consultation.” The submit control is disabled and a submit handler prevents navigation until a real destination is supplied. It does not store, send, or claim to submit requests.
 
-The entire consultation section and form panel now use the exact logo blue (#6DB2E4), with dark ink labels and white fields. Its submit button is white with dark text.
+The entire consultation section and form panel now use the exact logo blue (#6DB2E4), with dark ink labels and white fields. Its submit button is navy #15384D with white text.
 
 The pendant now uses the supplied sunboy-sunseal-blue SVG. The ray and face artwork are separated into matched 700×700 SVG layers. Rays rotate around the shared viewBox center on a 90-second loop; the face and blue circular frame never transform. The white circle has radius 247, inside the fixed blue frame outer radius 252. One subtle keyboard-operable “Pause motion” control in the hero stops/resumes both the background video and rays. There is no separate control beneath the sun. Reduced-motion preferences start the sun paused; offscreen/hidden pages also pause it. The SVG in outputs is a static, white-backed editable version with named ray/face groups.
 
@@ -34,4 +34,4 @@ The homepage product section contains Shades, Blinds, Shutters and Exterior Shad
 
 A shared classic navy footer appears on the homepage and accessibility page. It includes the supplied logo rendered white with CSS, product anchors, existing-page navigation, a consultation CTA and a copyright/accessibility row. Phone, email, street address, social profiles and policy links are omitted because no verified destinations have been supplied.
 
-The navbar is white with the original blue logo and navy text, including the mobile menu and accessibility-page header. The blue buttons in the navbar, hero and footer all use the same flat logo blue #6DB2E4 through the shared --sky variable, including hover/active states. The form uses its existing white submit style.
+The navbar is white with the original blue logo and navy text, including the mobile menu and accessibility-page header. The blue buttons in the navbar, hero and footer all use the same flat logo blue #6DB2E4 through the shared --sky variable, including hover/active states. The form submit button uses navy #15384D with white text.

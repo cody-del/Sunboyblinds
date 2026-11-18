@@ -93,8 +93,8 @@ h1{font-size:clamp(19px,5.3vw,84px);font-weight:800;letter-spacing:-.045em;line-
 .form-field textarea{resize:vertical;min-height:80px}
 .form-field input:focus-visible,.form-field select:focus-visible,.form-field textarea:focus-visible{outline:3px solid var(--ink);outline-offset:3px;border-color:var(--ink)}
 .form-field input:user-invalid,.form-field select:user-invalid{border-color:#a63030}
-.form-submit{align-self:stretch;min-height:48px;font-size:14px;font-weight:700;padding:14px 24px;margin-top:2px;background:#fff;background-image:none;color:var(--ink)}
-.form-submit:hover,.form-submit:active{background:#f0f8fd;background-image:none}
+.form-submit{align-self:stretch;min-height:48px;font-size:14px;font-weight:700;padding:14px 24px;margin-top:2px;background:var(--ink);background-image:none;color:#fff}
+.form-submit:hover,.form-submit:active{background:var(--ink);background-image:none}
 .form-submit:focus-visible{outline-color:var(--ink)}
 .form-submit:disabled{opacity:1;cursor:default}
 .form-status{font-size:13px;line-height:1.6;margin:0;color:var(--ink)}
