@@ -142,3 +142,11 @@ Latest centered hero: two CTA designs and the requested Google/Facebook five-sta
 - Local browser checks at 1280px show four footer columns and no horizontal overflow. At 320px, navigation uses two 126px columns; logo width is 200px, CTA height is 48px with 13px text, and the page fits the viewport. Checked the footer on both page layouts.
 - Keyboard checks: product and consultation links reached the intended targets; Accessibility opened its route; Tab showed a 3px blue focus ring on Back to top; Enter returned scroll position to zero. A product link from the accessibility footer returned to the correct homepage anchor. Current-page Accessibility state is present on that route.
 - Git whitespace checks passed. No screen-reader session or full-site accessibility audit was performed. Existing form and contact limitations remain unchanged.
+
+## Navy navigation theme — November 18, 2026
+
+- Changed the navbar to footer navy #15384D, with the existing supplied logo styled white in CSS and white navigation labels. The original logo asset, navbar geometry and hero remain unchanged.
+- Gave the flat navbar button a deeper brand blue #3278A5 with white text and no light overlay; calculated text contrast is approximately 4.8:1. Hover and active colors are darker. Other site buttons retain their existing styles.
+- Matched the mobile menu panel and menu toggle to navy/white. At 1280px and 320px, rendered styles match the intended colors and there is no horizontal overflow. The accessibility-page header uses the same navy background with white Back to home text.
+- At 320px, the menu opens, Enter activates Indoor, Escape dismisses its dialog and focus returns to the menu toggle. Checked the visible desktop and expanded mobile navigation.
+- Git whitespace checks passed. Scope is the navigation theme; no full-site accessibility audit or screen-reader session was performed. Existing prototype form/contact limitations remain unchanged.
