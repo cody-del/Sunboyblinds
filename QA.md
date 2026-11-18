@@ -62,3 +62,7 @@ Latest centered hero: two CTA designs and the requested Google/Facebook five-sta
 - Control is now a quieter 32px-high translucent pill; keyboard focus remains clearly visible.
 - Browser keyboard checks: pause stops the video and rays, navigating to the consultation section keeps both paused, resume restarts both, and the face remains untransformed. No browser errors during these checks.
 - At 320px: one motion control remains, no under-sun control is present, target height is 32px and no horizontal overflow occurs. Accessibility instructions updated for the shared control.
+
+## Slower sun rotation — November 17, 2026
+
+- Doubled the ray animation duration from 45 seconds to 90 seconds per revolution, halving its speed. Only the timing and CSS asset revision changed. Source and whitespace checks passed; prior layout and shared-control checks remain applicable.
