@@ -75,3 +75,12 @@ Latest centered hero: two CTA designs and the requested Google/Facebook five-sta
 - At 1280px, both columns begin at the same vertical position and the new form heading wraps cleanly. At 320px, the form is 276px wide and there is no horizontal overflow.
 - Hero H1 remains exactly two lines at desktop and 320px: its height is twice the computed line height. Form labels render at 14px, with 16px input text.
 - Copy remains literal HTML. Animation and form routing behavior are unchanged; submission is still disabled pending a destination. Prior prototype limitations remain.
+
+## Simple balanced homepage section — November 18, 2026
+
+- Removed ZIP, interest and project-detail fields. Only Full name, Email and Phone remain, all required with name/email/tel autocomplete. Submit copy is Request Consultation.
+- Kept Manrope and softened the section typography to 700 for the centered heading and 600 for trust points/labels. Removed the competing left heading and converted the consultation heading to a shared H2 in literal HTML.
+- Replaced repeated checks with four original, matching SVG line icons (installation/window, turnaround/clock, in-house/person and satisfaction/smiling sun). Icons are decorative beside their text; no extra business claims added.
+- At 1280px, both columns are 456px wide and centered about the sun badge. The section is about 626px high, compared with about 747px before this revision. The entire form is visible in the captured section view.
+- At 320px, there is no horizontal overflow; the shared title wraps to two lines. Empty fields are invalid, an invalid email is detected, and synthetic valid values clear all invalid fields. No live submission sent.
+- Form submission remains disabled pending its destination. Existing motion, private access and other prototype limitations are unchanged.
