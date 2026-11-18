@@ -127,3 +127,10 @@ Latest centered hero: two CTA designs and the requested Google/Facebook five-sta
 - Kept the section white, with four equal desktop columns and two columns at 860px and below. No new buttons, product-page placeholders, animation or unsupported product claims were introduced.
 - Browser checks at 1280px confirmed four 262px columns at the same vertical position. At 320px, the grid has two 129px columns, all labels fit and document width equals viewport width. All four illustration assets load.
 - SVG XML and Git whitespace checks passed. This was a scoped visual/responsive check; no screen-reader session or full-site accessibility audit was performed. Existing form and contact limitations remain unchanged.
+
+## Real product photography — November 18, 2026
+
+- Replaced all four product illustrations with real manufacturer product photographs from the matching Graber / Springs Window Fashions galleries. The category row now shows roller shades, horizontal blinds, plantation shutters and outdoor roller shades. Source URLs are recorded in product-photo-sources.json.
+- Removed the rejected product SVG assets. Kept the approved four-column desktop layout, category labels, white section background and two-column mobile layout. Added short descriptive photo alternatives after visually inspecting each image.
+- All four WebP files are 800×700 pixels and total about 305KB. Local browser checks at 1280px and 320px confirmed that they load, preserve matching crops and cause no horizontal overflow. Desktop remains four 262px columns; narrow mobile remains two 129px columns.
+- Git whitespace checks passed. No product specifications, brand dealership claims, or Sunboy installation claims were added. Existing form and contact limitations are unchanged. Screen-reader testing and a full accessibility audit were not performed.
