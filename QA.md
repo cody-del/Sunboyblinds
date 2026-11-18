@@ -106,3 +106,11 @@ Latest centered hero: two CTA designs and the requested Google/Facebook five-sta
 - Removed the visible all-fields-required introduction and marked Full name, Email and Phone with asterisks. Native required attributes, autocomplete and empty-field validation remain. Asterisks are decorative for assistive technology; labels remain associated with their inputs.
 - Browser checks at 1280px and 320px confirmed all four illustrations load, three starred labels appear, and there is no horizontal overflow. All trust labels remain on one line at 320px. Empty required fields still report valueMissing. Desktop and mobile screenshots saved.
 - Git whitespace and SVG parsing checks passed. This was a scoped visual/form-label check; no screen-reader session, automated accessibility audit or live submission was performed. Form routing remains unconfigured and submission disabled.
+
+## Supplied heading artwork and form cleanup — November 18, 2026
+
+- Replaced the consultation heading's visible font rendering with the user-supplied white SVG lettering. Retained the same text as an HTML H2 accessible name. A mobile SVG reuses the exact path artwork in two centered lines at the space after “free.”
+- Removed the stars from Email and Phone, retaining the star beside Full name per the user's clarification. All three native required attributes remain. No all-fields-required sentence exists in the source.
+- Local browser checks at 1280px and 320px show the supplied artwork, the intended labels, and no horizontal overflow. The mobile heading uses the two-line SVG.
+- The previously open hosted preview still showed the older form after reload, despite the prior deployment's success result. This revision therefore requires direct verification of the hosted heading and labels after publication.
+- Scope is heading artwork and labels; form routing remains unconfigured and submission disabled. Screen-reader testing and a full accessibility audit were not performed.

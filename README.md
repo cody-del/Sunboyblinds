@@ -26,4 +26,6 @@ The shared section heading is “Schedule a free in-home consultation.” as sup
 
 The current trust illustrations are white SVG paths with transparent cutouts, converted from the approved illustrated drill/clock concepts, revised construction helmet, and plain geometric sun. They map respectively to Professional installation, Quick turnaround times, No subcontractors, and Your satisfaction comes first. Each SVG has only a white even-odd path, with no painted blue/black background and no embedded raster image. Icon boxes are 56px on desktop and 44px on mobile.
 
-The form now marks Full name, Email and Phone with a visible asterisk, replacing the all-fields-required introduction. Native required attributes and validation remain; decorative asterisks are hidden from assistive technology to avoid duplicate required announcements.
+The form now marks Full name with a visible asterisk, replacing the all-fields-required introduction; Email and Phone have plain labels. Native required attributes and validation remain; decorative asterisks are hidden from assistive technology to avoid duplicate required announcements.
+
+The section heading displays the supplied sunboy-cta-schedule-white.svg lettering. A mobile derivative uses the same paths on two centered lines; the original file remains unchanged. The H2 retains the exact heading words in a visually hidden HTML span and the artwork is decorative.
