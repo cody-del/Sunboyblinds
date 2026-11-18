@@ -134,3 +134,11 @@ Latest centered hero: two CTA designs and the requested Google/Facebook five-sta
 - Removed the rejected product SVG assets. Kept the approved four-column desktop layout, category labels, white section background and two-column mobile layout. Added short descriptive photo alternatives after visually inspecting each image.
 - All four WebP files are 800×700 pixels and total about 305KB. Local browser checks at 1280px and 320px confirmed that they load, preserve matching crops and cause no horizontal overflow. Desktop remains four 262px columns; narrow mobile remains two 129px columns.
 - Git whitespace checks passed. No product specifications, brand dealership claims, or Sunboy installation claims were added. Existing form and contact limitations are unchanged. Screen-reader testing and a full accessibility audit were not performed.
+
+## Classic sitewide footer — November 18, 2026
+
+- Replaced the minimal footer on the homepage and accessibility route with a shared classic navy design: white-styled supplied logo, Tampa Bay description, Products and Explore navigation columns, a consultation CTA and copyright/accessibility/back-to-top row. The original logo file is unchanged.
+- Product links use real homepage category anchors. Consultation links use the existing section. Unverified phone/email/address/social and nonexistent policy pages were not added.
+- Local browser checks at 1280px show four footer columns and no horizontal overflow. At 320px, navigation uses two 126px columns; logo width is 200px, CTA height is 48px with 13px text, and the page fits the viewport. Checked the footer on both page layouts.
+- Keyboard checks: product and consultation links reached the intended targets; Accessibility opened its route; Tab showed a 3px blue focus ring on Back to top; Enter returned scroll position to zero. A product link from the accessibility footer returned to the correct homepage anchor. Current-page Accessibility state is present on that route.
+- Git whitespace checks passed. No screen-reader session or full-site accessibility audit was performed. Existing form and contact limitations remain unchanged.

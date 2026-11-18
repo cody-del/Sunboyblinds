@@ -7,10 +7,10 @@
   <title>Sunboy Blinds — Tampa Bay Window Treatment Experts</title>
   <meta name="description" content="#1 Window Treatment Experts for the Tampa Bay area. Meet Sunboy Blinds.">
   <link rel="preload" href="/assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/styles.css?v=product-photos-1">
+  <link rel="stylesheet" href="/styles.css?v=classic-footer-1">
   <script src="/app.js?v=shared-motion-1" defer></script>
 </head>
-<body>
+<body id="top">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="navbar">
     <a class="logo" href="/" aria-label="Sunboy Blinds home"><img src="/assets/sunboy-logo.png" alt="Sunboy Blinds" width="1408" height="684"></a>
@@ -85,15 +85,49 @@
       <div class="products-inner">
         <h2 id="products-title">Our products</h2>
         <ul class="product-grid">
-          <li class="product-item"><img src="/assets/products/shades.webp" alt="Light gray roller shades in a navy living room." width="800" height="700" loading="lazy" decoding="async"><h3>Shades</h3></li>
-          <li class="product-item"><img src="/assets/products/blinds.webp" alt="Horizontal blinds fitted inside a bedroom window." width="800" height="700" loading="lazy" decoding="async"><h3>Blinds</h3></li>
-          <li class="product-item"><img src="/assets/products/shutters.webp" alt="White plantation shutters in a home office." width="800" height="700" loading="lazy" decoding="async"><h3>Shutters</h3></li>
-          <li class="product-item"><img src="/assets/products/exterior-shades.webp" alt="Outdoor roller shades around a covered patio." width="800" height="700" loading="lazy" decoding="async"><h3>Exterior Shades</h3></li>
+          <li class="product-item" id="product-shades"><img src="/assets/products/shades.webp" alt="Light gray roller shades in a navy living room." width="800" height="700" loading="lazy" decoding="async"><h3>Shades</h3></li>
+          <li class="product-item" id="product-blinds"><img src="/assets/products/blinds.webp" alt="Horizontal blinds fitted inside a bedroom window." width="800" height="700" loading="lazy" decoding="async"><h3>Blinds</h3></li>
+          <li class="product-item" id="product-shutters"><img src="/assets/products/shutters.webp" alt="White plantation shutters in a home office." width="800" height="700" loading="lazy" decoding="async"><h3>Shutters</h3></li>
+          <li class="product-item" id="product-exterior-shades"><img src="/assets/products/exterior-shades.webp" alt="Outdoor roller shades around a covered patio." width="800" height="700" loading="lazy" decoding="async"><h3>Exterior Shades</h3></li>
         </ul>
       </div>
     </section>
   </main>
-  <footer><span>Sunboy Blinds</span><a href="/accessibility/">Accessibility</a></footer>
+  <footer class="site-footer" id="footer">
+    <div class="footer-inner">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="logo footer-logo" href="/" aria-label="Sunboy Blinds home"><img src="/assets/sunboy-logo.png" alt="Sunboy Blinds" width="1408" height="684" loading="lazy"></a>
+          <p>Window treatments for the<br>Tampa Bay area.</p>
+        </div>
+        <nav class="footer-column" aria-labelledby="footer-products-title">
+          <h2 id="footer-products-title">Products</h2>
+          <ul>
+            <li><a href="/#product-shades">Shades</a></li>
+            <li><a href="/#product-blinds">Blinds</a></li>
+            <li><a href="/#product-shutters">Shutters</a></li>
+            <li><a href="/#product-exterior-shades">Exterior Shades</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-column" aria-labelledby="footer-explore-title">
+          <h2 id="footer-explore-title">Explore</h2>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/#products">Our products</a></li>
+            <li><a href="/#consultation">Free consultation</a></li>
+          </ul>
+        </nav>
+        <div class="footer-consultation">
+          <h2>Schedule a free<br>in-home consultation.</h2>
+          <a class="sunboy-button footer-cta" href="/#consultation">Request a Consultation</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Sunboy Blinds. All rights reserved.</p>
+        <div class="footer-bottom-links"><a href="/accessibility/">Accessibility</a><a href="#top">Back to top</a></div>
+      </div>
+    </div>
+  </footer>
   <dialog id="film-dialog" aria-labelledby="film-title">
     <div class="film-heading"><h2 id="film-title">Sunboy in action.</h2><button id="close-film" aria-label="Close film"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div>
     <video id="full-film" controls playsinline preload="none" poster="/assets/hero-desktop.webp" aria-label="Window shades in a kitchen, living room and dining room"></video>
