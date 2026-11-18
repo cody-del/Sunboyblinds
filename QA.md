@@ -99,3 +99,10 @@ Latest centered hero: two CTA designs and the requested Google/Facebook five-sta
 - Enlarged boxes to 56px desktop and 44px mobile to retain illustration detail. Trust labels remain literal HTML, and decorative icons retain empty alt text.
 - Visually checked the desktop consultation section in native Google Chrome, including all four loaded icons, transparent interior openings, title, labels and form placement. Browser integration was unavailable; the native mobile check was interrupted by user browser activity, so no new mobile-browser pass is claimed. Narrow-screen CSS sizing was reviewed against the existing 320px layout.
 - SVG XML/white-only paint checks, asset existence and Git whitespace checks passed. Form, motion controls, copy and private access remain unchanged.
+
+## White illustrated icons and asterisk labels — November 18, 2026
+
+- Included the existing approved white drill, clock, hard hat and sun SVG illustrations from the icon side chat. Their transparent cutouts keep the section blue visible. Boxes are 56px on desktop and 44px on mobile.
+- Removed the visible all-fields-required introduction and marked Full name, Email and Phone with asterisks. Native required attributes, autocomplete and empty-field validation remain. Asterisks are decorative for assistive technology; labels remain associated with their inputs.
+- Browser checks at 1280px and 320px confirmed all four illustrations load, three starred labels appear, and there is no horizontal overflow. All trust labels remain on one line at 320px. Empty required fields still report valueMissing. Desktop and mobile screenshots saved.
+- Git whitespace and SVG parsing checks passed. This was a scoped visual/form-label check; no screen-reader session, automated accessibility audit or live submission was performed. Form routing remains unconfigured and submission disabled.
