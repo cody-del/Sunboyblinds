@@ -54,3 +54,11 @@ Latest centered hero: two CTA designs and the requested Google/Facebook five-sta
 - Section background now shares the same #6DB2E4 variable as the form and sun. Dark ink trust text/checks and white inputs remain readable; dividers use a subtle ink tint.
 - Rendered styles confirmed matching RGB 109, 178, 228 section/form backgrounds at 1280px and 320px, white fields, and no horizontal overflow.
 - Scope limited to colors and CSS revision. Animation, form behavior and existing prototype limitations are unchanged.
+
+## Shared subtle motion control — November 17, 2026
+
+- Removed the dedicated control beneath the sun, its styles and associated event handlers. Reduced the spacing previously reserved for it.
+- Existing hero control now says Pause motion / Play motion and shares one preference state across video and rays. Offscreen pausing does not alter the user's chosen motion state. Reduced-motion and data-saver defaults remain respected.
+- Control is now a quieter 32px-high translucent pill; keyboard focus remains clearly visible.
+- Browser keyboard checks: pause stops the video and rays, navigating to the consultation section keeps both paused, resume restarts both, and the face remains untransformed. No browser errors during these checks.
+- At 320px: one motion control remains, no under-sun control is present, target height is 32px and no horizontal overflow occurs. Accessibility instructions updated for the shared control.

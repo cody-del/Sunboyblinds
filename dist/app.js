@@ -8,15 +8,14 @@ const film = document.querySelector('#full-film');
 const infoDialog = document.querySelector('#info-dialog');
 const menuToggle = document.querySelector('#menu-toggle');
 const mobileNav = document.querySelector('#mobile-nav');
-let wantsPlayback = !reducedMotion.matches && !navigator.connection?.saveData;
+let wantsMotion = !reducedMotion.matches && !navigator.connection?.saveData;
 let heroVisible = true;
 let dialogTrigger;
 
 function updateMotionLabel() {
-  const playing = !background.paused;
-  motionButton.setAttribute('aria-pressed', String(playing));
-  motionButton.setAttribute('aria-label', playing ? 'Pause background video' : 'Play background video');
-  motionLabel.textContent = playing ? 'Pause video' : 'Play video';
+  motionButton.setAttribute('aria-pressed', String(wantsMotion));
+  motionButton.setAttribute('aria-label', wantsMotion ? 'Pause motion' : 'Play motion');
+  motionLabel.textContent = wantsMotion ? 'Pause motion' : 'Play motion';
 }
 function ensureSource() {
   const path = mobile.matches ? '/assets/hero-mobile.mp4' : '/assets/hero-desktop.mp4';
@@ -26,7 +25,7 @@ function ensureSource() {
   }
 }
 function syncPlayback() {
-  if (wantsPlayback && heroVisible && !document.hidden && !dialog.open && !infoDialog.open) {
+  if (wantsMotion && heroVisible && !document.hidden && !dialog.open && !infoDialog.open) {
     ensureSource();
     background.play().catch(updateMotionLabel);
   } else background.pause();
@@ -37,12 +36,14 @@ if (background) {
   background.addEventListener('pause', updateMotionLabel);
   background.addEventListener('error', updateMotionLabel);
   motionButton.addEventListener('click', () => {
-    wantsPlayback = background.paused;
+    wantsMotion = !wantsMotion;
     syncPlayback();
+    syncSunMotion();
   });
   reducedMotion.addEventListener('change', () => {
-    wantsPlayback = !reducedMotion.matches && !navigator.connection?.saveData;
+    wantsMotion = !reducedMotion.matches && !navigator.connection?.saveData;
     syncPlayback();
+    syncSunMotion();
   });
   mobile.addEventListener('change', () => {
     if (background.hasAttribute('src')) ensureSource();
@@ -123,23 +124,11 @@ document.querySelector('#consultation-form').addEventListener('submit', event =>
 });
 
 const sunPendant = document.querySelector('.section-pendant');
-const sunMotionToggle = document.querySelector('#sun-motion-toggle');
-let wantsSunMotion = !reducedMotion.matches;
 let sunIsVisible = false;
 
 function syncSunMotion() {
-  sunPendant.dataset.sunPlaying = String(wantsSunMotion && sunIsVisible && !document.hidden);
-  sunMotionToggle.setAttribute('aria-pressed', String(wantsSunMotion));
-  sunMotionToggle.textContent = wantsSunMotion ? 'Pause animation' : 'Play animation';
+  sunPendant.dataset.sunPlaying = String(wantsMotion && sunIsVisible && !document.hidden);
 }
-sunMotionToggle.addEventListener('click', () => {
-  wantsSunMotion = !wantsSunMotion;
-  syncSunMotion();
-});
-reducedMotion.addEventListener('change', () => {
-  wantsSunMotion = !reducedMotion.matches;
-  syncSunMotion();
-});
 document.addEventListener('visibilitychange', syncSunMotion);
 new IntersectionObserver(([entry]) => {
   sunIsVisible = entry.isIntersecting;
