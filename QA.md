@@ -66,3 +66,12 @@ Latest centered hero: two CTA designs and the requested Google/Facebook five-sta
 ## Slower sun rotation — November 17, 2026
 
 - Doubled the ray animation duration from 45 seconds to 90 seconds per revolution, halving its speed. Only the timing and CSS asset revision changed. Source and whitespace checks passed; prior layout and shared-control checks remain applicable.
+
+## Compact section and consistent typography — November 18, 2026
+
+- Replaced form heading with the user-supplied “Schedule a free in-home consultation.” and removed the old introduction. Free in-home consultation is a user-supplied offer; no other terms added.
+- Unified text typography to Manrope. Browser styles confirmed the same family on the hero, nav, trust heading, form heading, labels and fields. Headings use 800, trust points/labels 700, and navigation 600. Deeper ink #15384D improves contrast with unchanged blue.
+- Aligned the two columns at the top, reduced gap from 88px to 56px, removed redundant form padding and tightened field/outer spacing. Rendered desktop section height is about 747px.
+- At 1280px, both columns begin at the same vertical position and the new form heading wraps cleanly. At 320px, the form is 276px wide and there is no horizontal overflow.
+- Hero H1 remains exactly two lines at desktop and 320px: its height is twice the computed line height. Form labels render at 14px, with 16px input text.
+- Copy remains literal HTML. Animation and form routing behavior are unchanged; submission is still disabled pending a destination. Prior prototype limitations remain.
