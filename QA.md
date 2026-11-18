@@ -84,3 +84,10 @@ Latest centered hero: two CTA designs and the requested Google/Facebook five-sta
 - At 1280px, both columns are 456px wide and centered about the sun badge. The section is about 626px high, compared with about 747px before this revision. The entire form is visible in the captured section view.
 - At 320px, there is no horizontal overflow; the shared title wraps to two lines. Empty fields are invalid, an invalid email is detected, and synthetic valid values clear all invalid fields. No live submission sent.
 - Form submission remains disabled pending its destination. Existing motion, private access and other prototype limitations are unchanged.
+
+## Larger Sunboy trust icons — November 18, 2026
+
+- Replaced the small generic line icons with four custom SVG assets: a sunlit blind, a clock using the supplied seal rays, the supplied Sunboy mascot, and a smiling sun using the same rays. Navy outlines and white interiors match the section; source brand artwork is unchanged.
+- Enlarged icon boxes from 32px to 48px on desktop and from 28px to 40px on mobile. Retained the approved heading, columns, labels and form.
+- Browser checks at 1280px and 320px confirmed all four assets load at the intended size. At 320px, all trust labels remain on one line and document width equals viewport width. Icons have empty alt text because the adjacent HTML labels convey their meaning.
+- Saved the desktop section screenshot. Git whitespace and SVG parsing checks passed. Existing form, motion and private-preview behavior are unchanged.
