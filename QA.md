@@ -114,3 +114,9 @@ Latest centered hero: two CTA designs and the requested Google/Facebook five-sta
 - Local browser checks at 1280px and 320px show the supplied artwork, the intended labels, and no horizontal overflow. The mobile heading uses the two-line SVG.
 - The previously open hosted preview still showed the older form after reload, despite the prior deployment's success result. This revision therefore requires direct verification of the hosted heading and labels after publication.
 - Scope is heading artwork and labels; form routing remains unconfigured and submission disabled. Screen-reader testing and a full accessibility audit were not performed.
+
+## Navy consultation heading — November 18, 2026
+
+- Recolored the supplied desktop heading artwork and its two-line mobile derivative to #15384D, matching the section's ink text. The white originals and Downloads source are unchanged.
+- Preserved heading wording, HTML accessible name, artwork geometry, responsive layout, trust icons and form labels. No all-fields-required introduction was reintroduced.
+- Both navy SVGs parse successfully; their path data is identical to the corresponding white artwork. Git whitespace checks passed.

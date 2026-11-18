@@ -28,4 +28,4 @@ The current trust illustrations are white SVG paths with transparent cutouts, co
 
 The form now marks Full name with a visible asterisk, replacing the all-fields-required introduction; Email and Phone have plain labels. Native required attributes and validation remain; decorative asterisks are hidden from assistive technology to avoid duplicate required announcements.
 
-The section heading displays the supplied sunboy-cta-schedule-white.svg lettering. A mobile derivative uses the same paths on two centered lines; the original file remains unchanged. The H2 retains the exact heading words in a visually hidden HTML span and the artwork is decorative.
+The section heading displays the supplied lettering in navy #15384D via sunboy-cta-schedule-navy.svg. A mobile derivative uses the same paths on two centered lines; the original file remains unchanged. The H2 retains the exact heading words in a visually hidden HTML span and the artwork is decorative.
