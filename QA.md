@@ -91,3 +91,11 @@ Latest centered hero: two CTA designs and the requested Google/Facebook five-sta
 - Enlarged icon boxes from 32px to 48px on desktop and from 28px to 40px on mobile. Retained the approved heading, columns, labels and form.
 - Browser checks at 1280px and 320px confirmed all four assets load at the intended size. At 320px, all trust labels remain on one line and document width equals viewport width. Icons have empty alt text because the adjacent HTML labels convey their meaning.
 - Saved the desktop section screenshot. Git whitespace and SVG parsing checks passed. Existing form, motion and private-preview behavior are unchanged.
+
+## Illustrated white SVG trust set — November 18, 2026
+
+- Installed the approved illustrated drill and clock, a revised construction helmet with more realistic shell/rim/attachment contours, and a plain geometric sun without a face. Each sits beside its matching trust label.
+- Converted the white illustration planes into SVG paths with even-odd cutouts. All four SVGs contain only white paint, no background rectangle, black/blue paint, embedded bitmap, script, or external references. Blue visible within the artwork is the actual section background. Combined SVG size is about 133KB.
+- Enlarged boxes to 56px desktop and 44px mobile to retain illustration detail. Trust labels remain literal HTML, and decorative icons retain empty alt text.
+- Visually checked the desktop consultation section in native Google Chrome, including all four loaded icons, transparent interior openings, title, labels and form placement. Browser integration was unavailable; the native mobile check was interrupted by user browser activity, so no new mobile-browser pass is claimed. Narrow-screen CSS sizing was reviewed against the existing 320px layout.
+- SVG XML/white-only paint checks, asset existence and Git whitespace checks passed. Form, motion controls, copy and private access remain unchanged.
