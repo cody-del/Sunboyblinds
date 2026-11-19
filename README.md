@@ -2,6 +2,8 @@
 
 Buildless HTML, CSS and JavaScript. Serve `dist/` with a static HTTP server.
 
+The favicon uses the supplied little-boy circle badge, with its inset white backing and logo blue preserved, as dist/favicon.svg. Every public HTML page references the SVG favicon through the shared renderer or authored-head synchronization.
+
 The navbar uses the user-supplied sunboy-wordmark-blue.svg, displayed in a contained box without cropping or stretching. The footer retains the original user-supplied PNG, with its surrounding white space cropped in CSS and its white styling preserved. Original supplied files are unchanged.
 
 The desktop/mobile videos and posters were copied from the retired John Crawford hero in `owner-copy-work/dist/assets`. That project was only read. Source edit: `20261017_120924.mp4` and `20261017_120958.mp4`, kitchen/living/dining montage. The November 4 replacement video was not used.

@@ -15,6 +15,7 @@ PRODUCTS = {item['slug']: item for item in DATA['products']}
 HEADER = (ROOT / 'src/partials/header.html').read_text().strip()
 FOOTER = (ROOT / 'src/partials/footer.html').read_text().strip()
 INFO = (ROOT / 'src/partials/info-dialog.html').read_text().strip()
+FAVICON = '<link rel="icon" href="/favicon.svg?v=sunboy-boy-1" type="image/svg+xml" sizes="any">'
 
 
 def url(item):
@@ -67,6 +68,7 @@ def document(title, description, path, content, schema, preview=False, body_clas
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#6db2e4">
+  {FAVICON}
   <title>{escape(title)} — Sunboy Blinds</title>
   <meta name="description" content="{escape(description)}">
 {robots}
@@ -150,6 +152,8 @@ for relative in ['index.html', 'contact/index.html', 'accessibility/index.html']
         text = re.sub(r'<link rel="canonical"[^>]+>', lambda _: canonical, text)
     else:
         text = text.replace('</head>', canonical + '\n</head>')
+    if 'rel="icon"' not in text:
+        text = text.replace('</head>', FAVICON + '\n</head>')
     target.write_text(text)
 
 class RobotsParser(HTMLParser):
