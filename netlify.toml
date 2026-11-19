@@ -1,3 +1,13 @@
 [build]
   publish = "dist"
   command = ""
+
+[[redirects]]
+  from = "/indoor/smart-dreams/"
+  to = "/indoor/smartdrape/"
+  status = 301
+
+[[redirects]]
+  from = "/indoor/smart-dreams"
+  to = "/indoor/smartdrape/"
+  status = 301

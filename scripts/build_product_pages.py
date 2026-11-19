@@ -7,7 +7,7 @@ import re
 ROOT = Path(__file__).resolve().parents[1]
 DIST = ROOT / 'dist'
 ORIGIN = 'https://sunboyblinds.netlify.app'
-VERSION = 'product-navigation-2'
+VERSION = 'smartdrape-1'
 DATA = json.loads((ROOT / 'src/catalog.json').read_text())
 PRODUCTS = {item['slug']: item for item in DATA['products']}
 HEADER = (ROOT / 'src/partials/header.html').read_text().strip()
