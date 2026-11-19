@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "default_market_id": "tampa-bay-fl",
+  "markets": [
+    {
+      "id": "tampa-bay-fl",
+      "name": "Tampa Bay",
+      "state": "FL",
+      "country": "US",
+      "status": "initial_market",
+      "coverage": {
+        "region": "Tampa Bay area",
+        "confirmed_cities": [],
+        "confirmed_counties": [],
+        "confirmed_postal_codes": [],
+        "boundary_confirmation": "pending"
+      },
+      "operator": {
+        "id": null,
+        "display_name": "Sunboy Blinds",
+        "ownership_model": null
+      },
+      "customer_visits_office": null,
+      "public_address": null,
+      "public_phone": null,
+      "business_hours": null,
+      "google_business_profile_url": null,
+      "product_availability": {
+        "mode": "inherit_current_confirmed_catalog",
+        "overrides": []
+      },
+      "consultation": {
+        "url": "/contact/",
+        "accepting_online_submissions": false,
+        "destination": null
+      },
+      "local_project_ids": [],
+      "verified_review_sources": [],
+      "page_id": "tampa-bay-market",
+      "state_slug": "fl"
+    }
+  ],
+  "future_record_fields": [
+    "stable market ID",
+    "real operator/team identity",
+    "confirmed coverage",
+    "actual local contact details",
+    "verified Google Business Profile",
+    "available product IDs",
+    "original local projects",
+    "authentic reviews",
+    "consultation destination"
+  ],
+  "routing_design": {
+    "implementation_status": "planned_only",
+    "default_market": "tampa-bay-fl",
+    "source_market_context": "Pass a validated market ID from a market page into the shared consultation journey.",
+    "unmatched_requests": "Define central handling before activating delivery.",
+    "visible_fields_now": [
+      "full_name",
+      "email",
+      "phone"
+    ]
+  },
+  "operating_location_rule": "Website location pages and Google Business Profiles must reflect real operations. A service-area city alone does not establish a new staffed location or profile."
+}

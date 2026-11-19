@@ -1,0 +1,618 @@
+{
+  "schema_version": 1,
+  "brand": "Sunboy Blinds",
+  "created_date": "2026-11-19",
+  "status": "proposed_architecture",
+  "configured_site_origin": "https://sunboyblinds.netlify.app",
+  "final_business_domain": null,
+  "recommendation": "One primary website, shared product pages, and a separate operating-market and service-area layer.",
+  "publication": {
+    "live_directory": "dist",
+    "draft_directory": "architecture/drafts",
+    "drafts_are_public": false,
+    "include_in_live_sitemap": [
+      "live"
+    ],
+    "new_drafts_published_by_this_change": false
+  },
+  "markets_file": "architecture/markets.json",
+  "default_market_id": "tampa-bay-fl",
+  "pages": [
+    {
+      "id": "home",
+      "title": "Home",
+      "url": "/",
+      "type": "home",
+      "status": "live",
+      "parent_id": null,
+      "phase": "current",
+      "scope": "single_market_home"
+    },
+    {
+      "id": "contact",
+      "title": "Book a Consultation",
+      "url": "/contact/",
+      "type": "contact",
+      "status": "live",
+      "parent_id": "home",
+      "phase": "current",
+      "scope": "brand"
+    },
+    {
+      "id": "accessibility",
+      "title": "Accessibility",
+      "url": "/accessibility/",
+      "type": "policy",
+      "status": "live",
+      "parent_id": "home",
+      "phase": "current",
+      "scope": "brand"
+    },
+    {
+      "id": "shades",
+      "title": "Shades",
+      "url": "/shades/",
+      "type": "product_category",
+      "status": "live",
+      "parent_id": "home",
+      "phase": "current",
+      "scope": "shared_catalog"
+    },
+    {
+      "id": "blinds",
+      "title": "Blinds",
+      "url": "/blinds/",
+      "type": "product_category",
+      "status": "live",
+      "parent_id": "home",
+      "phase": "current",
+      "scope": "shared_catalog"
+    },
+    {
+      "id": "roller-shades",
+      "title": "Roller Shades",
+      "url": "/shades/roller-shades/",
+      "type": "product",
+      "status": "live",
+      "parent_id": "shades",
+      "phase": "current",
+      "scope": "shared_catalog"
+    },
+    {
+      "id": "solar-shades",
+      "title": "Solar Shades",
+      "url": "/shades/solar-shades/",
+      "type": "product",
+      "status": "live",
+      "parent_id": "shades",
+      "phase": "current",
+      "scope": "shared_catalog"
+    },
+    {
+      "id": "honeycomb-shades",
+      "title": "Honeycomb Shades",
+      "url": "/shades/honeycomb-shades/",
+      "type": "product",
+      "status": "live",
+      "parent_id": "shades",
+      "phase": "current",
+      "scope": "shared_catalog"
+    },
+    {
+      "id": "woven-wood-shades",
+      "title": "Woven Wood Shades",
+      "url": "/shades/woven-wood-shades/",
+      "type": "product",
+      "status": "live",
+      "parent_id": "shades",
+      "phase": "current",
+      "scope": "shared_catalog"
+    },
+    {
+      "id": "horizontal-blinds",
+      "title": "Horizontal Blinds",
+      "url": "/blinds/horizontal-blinds/",
+      "type": "product",
+      "status": "live",
+      "parent_id": "blinds",
+      "phase": "current",
+      "scope": "shared_catalog"
+    },
+    {
+      "id": "vertical-blinds",
+      "title": "Vertical Blinds",
+      "url": "/blinds/vertical-blinds/",
+      "type": "product",
+      "status": "live",
+      "parent_id": "blinds",
+      "phase": "current",
+      "scope": "shared_catalog"
+    },
+    {
+      "id": "exterior-retractable-screens",
+      "title": "Exterior Retractable Screens",
+      "url": "/outdoor/exterior-retractable-screens/",
+      "type": "product",
+      "status": "live",
+      "parent_id": "home",
+      "phase": "current",
+      "scope": "shared_catalog"
+    },
+    {
+      "id": "smartdrape",
+      "title": "SmartDrape",
+      "url": "/indoor/smartdrape/",
+      "type": "product",
+      "status": "live",
+      "parent_id": "home",
+      "phase": "current",
+      "scope": "shared_catalog"
+    },
+    {
+      "id": "services",
+      "title": "Services",
+      "url": "/services/",
+      "type": "service_overview",
+      "status": "draft",
+      "parent_id": "home",
+      "phase": "next_templates",
+      "scope": "brand",
+      "draft_file": "architecture/drafts/services.md",
+      "needs": [
+        "Confirm the actual consultation and installation process.",
+        "Do not add repair, motorization or commercial services without confirmation."
+      ],
+      "sections": [
+        {
+          "slot": "1",
+          "label": "Page heading",
+          "content": null
+        },
+        {
+          "slot": "2",
+          "label": "Free in-home consultation",
+          "content": null
+        },
+        {
+          "slot": "3",
+          "label": "Professional installation",
+          "content": null
+        },
+        {
+          "slot": "4",
+          "label": "How the process works",
+          "content": null
+        },
+        {
+          "slot": "5",
+          "label": "Related product categories",
+          "content": null
+        },
+        {
+          "slot": "6",
+          "label": "Book a Consultation",
+          "content": null
+        }
+      ]
+    },
+    {
+      "id": "about",
+      "title": "About Sunboy",
+      "url": "/about/",
+      "type": "brand_story",
+      "status": "draft",
+      "parent_id": "home",
+      "phase": "next_templates",
+      "scope": "brand",
+      "draft_file": "architecture/drafts/about.md",
+      "needs": [
+        "Supply the actual owner/team names, history and photos.",
+        "Do not invent years in business, awards, credentials or guarantees."
+      ],
+      "sections": [
+        {
+          "slot": "1",
+          "label": "Page heading",
+          "content": null
+        },
+        {
+          "slot": "2",
+          "label": "Sunboy story",
+          "content": null
+        },
+        {
+          "slot": "3",
+          "label": "Owner and team",
+          "content": null
+        },
+        {
+          "slot": "4",
+          "label": "How Sunboy works",
+          "content": null
+        },
+        {
+          "slot": "5",
+          "label": "Original team photos",
+          "content": null
+        },
+        {
+          "slot": "6",
+          "label": "Book a Consultation",
+          "content": null
+        }
+      ]
+    },
+    {
+      "id": "service-area",
+      "title": "Service Area",
+      "url": "/service-area/",
+      "type": "coverage_directory",
+      "status": "draft",
+      "parent_id": "home",
+      "phase": "next_templates",
+      "scope": "brand",
+      "draft_file": "architecture/drafts/service-area.md",
+      "needs": [
+        "Confirm launch cities/counties/postal codes.",
+        "Tampa Bay is the only regional coverage currently confirmed.",
+        "Do not describe a coverage city as a staffed office."
+      ],
+      "sections": [
+        {
+          "slot": "1",
+          "label": "Page heading",
+          "content": null
+        },
+        {
+          "slot": "2",
+          "label": "Confirmed Tampa Bay coverage",
+          "content": null
+        },
+        {
+          "slot": "3",
+          "label": "City or county coverage list",
+          "content": null
+        },
+        {
+          "slot": "4",
+          "label": "Operating market relationship",
+          "content": null
+        },
+        {
+          "slot": "5",
+          "label": "Consultation link",
+          "content": null
+        }
+      ]
+    },
+    {
+      "id": "our-work",
+      "title": "Our Work",
+      "url": "/our-work/",
+      "type": "project_directory",
+      "status": "draft",
+      "parent_id": "home",
+      "phase": "supporting_content",
+      "scope": "brand",
+      "draft_file": "architecture/drafts/our-work.md",
+      "needs": [
+        "Collect Sunboy project photos and permission to use them.",
+        "Existing manufacturer product photos are not Sunboy installations."
+      ],
+      "sections": [
+        {
+          "slot": "1",
+          "label": "Page heading",
+          "content": null
+        },
+        {
+          "slot": "2",
+          "label": "Real project gallery",
+          "content": null
+        },
+        {
+          "slot": "3",
+          "label": "Product and city filters when useful",
+          "content": null
+        },
+        {
+          "slot": "4",
+          "label": "Selected project stories",
+          "content": null
+        },
+        {
+          "slot": "5",
+          "label": "Book a Consultation",
+          "content": null
+        }
+      ]
+    },
+    {
+      "id": "reviews",
+      "title": "Customer Reviews",
+      "url": "/reviews/",
+      "type": "reviews",
+      "status": "draft",
+      "parent_id": "home",
+      "phase": "supporting_content",
+      "scope": "brand",
+      "draft_file": "architecture/drafts/reviews.md",
+      "needs": [
+        "Supply the real Google/Facebook profile URLs and review evidence.",
+        "Do not carry the design-only five-star badges into verified rating claims."
+      ],
+      "sections": [
+        {
+          "slot": "1",
+          "label": "Page heading",
+          "content": null
+        },
+        {
+          "slot": "2",
+          "label": "Verified customer reviews",
+          "content": null
+        },
+        {
+          "slot": "3",
+          "label": "Links to the real review profiles",
+          "content": null
+        },
+        {
+          "slot": "4",
+          "label": "Local context when available",
+          "content": null
+        },
+        {
+          "slot": "5",
+          "label": "Book a Consultation",
+          "content": null
+        }
+      ]
+    },
+    {
+      "id": "faqs",
+      "title": "Frequently Asked Questions",
+      "url": "/faqs/",
+      "type": "faq",
+      "status": "draft",
+      "parent_id": "home",
+      "phase": "supporting_content",
+      "scope": "brand",
+      "draft_file": "architecture/drafts/faqs.md",
+      "needs": [
+        "Answer from actual business processes.",
+        "Do not invent prices, turnaround times, warranty terms or financing."
+      ],
+      "sections": [
+        {
+          "slot": "1",
+          "label": "Page heading",
+          "content": null
+        },
+        {
+          "slot": "2",
+          "label": "Consultation questions",
+          "content": null
+        },
+        {
+          "slot": "3",
+          "label": "Installation questions",
+          "content": null
+        },
+        {
+          "slot": "4",
+          "label": "Product-choice questions",
+          "content": null
+        },
+        {
+          "slot": "5",
+          "label": "Contact link",
+          "content": null
+        }
+      ]
+    },
+    {
+      "id": "privacy",
+      "title": "Privacy",
+      "url": "/privacy/",
+      "type": "policy",
+      "status": "draft",
+      "parent_id": "home",
+      "phase": "before_form_activation",
+      "scope": "brand",
+      "draft_file": "architecture/drafts/privacy.md",
+      "needs": [
+        "Complete around the real form destination, tracking and business contact details.",
+        "This is an outline, not a drafted privacy policy."
+      ],
+      "sections": [
+        {
+          "slot": "1",
+          "label": "Page heading",
+          "content": null
+        },
+        {
+          "slot": "2",
+          "label": "Information collected",
+          "content": null
+        },
+        {
+          "slot": "3",
+          "label": "Actual form and hosting providers",
+          "content": null
+        },
+        {
+          "slot": "4",
+          "label": "How requests are used",
+          "content": null
+        },
+        {
+          "slot": "5",
+          "label": "Tracking and cookies actually in use",
+          "content": null
+        },
+        {
+          "slot": "6",
+          "label": "Contact details",
+          "content": null
+        }
+      ]
+    },
+    {
+      "id": "locations",
+      "title": "Find a Sunboy Location",
+      "url": "/locations/",
+      "type": "market_directory",
+      "status": "reserved",
+      "parent_id": "home",
+      "phase": "multiple_operations",
+      "scope": "brand",
+      "publish_when": "There is a useful directory of real operating markets; one Tampa Bay operation does not require a public locator."
+    },
+    {
+      "id": "tampa-bay-market",
+      "title": "Sunboy Tampa Bay",
+      "url": "/locations/fl/tampa-bay/",
+      "type": "market_home",
+      "status": "reserved",
+      "parent_id": "locations",
+      "phase": "market_template",
+      "scope": "market",
+      "market_id": "tampa-bay-fl",
+      "draft_file": "architecture/drafts/tampa-bay-market.md",
+      "publish_when": "A distinct local page can present verified team/contact/coverage/project information. Avoid duplicating the Tampa Bay homepage or service-area overview."
+    },
+    {
+      "id": "resources",
+      "title": "Window Treatment Guides",
+      "url": "/resources/",
+      "type": "resource_directory",
+      "status": "reserved",
+      "parent_id": "home",
+      "phase": "content_program",
+      "scope": "brand",
+      "publish_when": "Useful original guides are ready, with a plan to maintain them."
+    },
+    {
+      "id": "franchise",
+      "title": "Franchise Opportunities",
+      "url": "/franchise/",
+      "type": "franchise",
+      "status": "reserved",
+      "parent_id": "home",
+      "phase": "future_franchise",
+      "scope": "brand",
+      "publish_when": "There is an actual approved franchise offer and approved information to publish. No franchise marketing is implied by reserving this route."
+    },
+    {
+      "id": "shutters",
+      "title": "Shutters",
+      "url": "/shutters/",
+      "type": "product_category",
+      "status": "conditional",
+      "parent_id": "home",
+      "phase": "offering_confirmation",
+      "scope": "shared_catalog",
+      "publish_when": "Reconfirm the offering. Shutters appear in the earlier approved homepage row but were absent from the latest detailed product list."
+    }
+  ],
+  "route_templates": [
+    {
+      "id": "market",
+      "pattern": "/locations/{state}/{market}/",
+      "type": "market_home",
+      "status": "reserved",
+      "required_keys": [
+        "market_id",
+        "state",
+        "market_slug"
+      ],
+      "rule": "One page per real local operating team/territory. A coverage city does not automatically create an operation."
+    },
+    {
+      "id": "coverage-city",
+      "pattern": "/service-area/{city-state}/",
+      "type": "coverage_city",
+      "status": "reserved",
+      "required_keys": [
+        "market_id",
+        "city",
+        "state",
+        "city_state_slug"
+      ],
+      "rule": "Create selectively for confirmed service coverage with distinct useful local material. Do not generate every city/product combination."
+    },
+    {
+      "id": "project",
+      "pattern": "/our-work/{project-slug}/",
+      "type": "project",
+      "status": "reserved",
+      "required_keys": [
+        "project_id",
+        "market_id",
+        "city",
+        "product_ids",
+        "original_photos"
+      ],
+      "rule": "Use actual completed Sunboy work. The stable project URL does not depend on its current operator."
+    },
+    {
+      "id": "resource",
+      "pattern": "/resources/{article-slug}/",
+      "type": "resource",
+      "status": "reserved",
+      "required_keys": [
+        "topic",
+        "author",
+        "reviewed_date"
+      ],
+      "rule": "Useful brand-level guidance; link to relevant categories/products and consultation."
+    },
+    {
+      "id": "service-detail",
+      "pattern": "/services/{service-slug}/",
+      "type": "service",
+      "status": "conditional",
+      "required_keys": [
+        "confirmed_service",
+        "distinct_page_purpose"
+      ],
+      "rule": "Create only when the service warrants a useful separate page. Keep the booking form at /contact/."
+    }
+  ],
+  "navigation": {
+    "now": [
+      "Indoor",
+      "Outdoor",
+      "Services",
+      "About",
+      "Service Area",
+      "Book a Consultation"
+    ],
+    "next": "Convert Services, About and Service Area from dialogs to normal page links once the new page layouts/content are ready.",
+    "future": "Add a location selector or Find a Location only when multiple markets are actually operating. Keep the shared product navigation."
+  },
+  "scaling_rules": [
+    "Preserve current product URLs; do not copy the catalog into each city or market folder by default.",
+    "Use stable market IDs independent of company-owned or franchise operator changes.",
+    "Store local product availability, contacts, coverage, projects and review sources against market IDs.",
+    "Keep brand product information centrally maintained. Future local editors can maintain their own verified local records.",
+    "Use market/product context to route the existing consultation form later. No form integration or extra visible field is introduced now.",
+    "Keep one primary page for each purpose. Coverage pages describe where Sunboy works; market pages describe the local operation.",
+    "When multiple markets launch, review Tampa Bay-specific wording in shared product pages and the brand homepage. Preserve existing URLs and local relevance during that change."
+  ],
+  "sources": [
+    {
+      "title": "Google Search: doorway abuse",
+      "url": "https://developers.google.com/search/docs/essentials/spam-policies#doorway-abuse"
+    },
+    {
+      "title": "Google Business Profile representation guidelines",
+      "url": "https://support.google.com/business/answer/3038177?hl=en"
+    },
+    {
+      "title": "Google Search: control indexing",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/block-indexing"
+    }
+  ]
+}

@@ -213,3 +213,11 @@ Latest centered hero: two CTA designs and the requested Google/Facebook five-sta
 - Source checks passed across 13 routes for corrected navigation labels/URLs, local links, unique IDs and sitemap coverage. Customer Copy Guard returned zero blocking findings and review warnings; Git whitespace checks passed. This was a product-name/copy/routing correction, not a full accessibility or SEO audit.
 
 - Deployment follow-up: the first live check returned 404 at the former URL rather than following the root configuration rule. Moved the two explicit permanent mappings into the published dist/_redirects file so they travel with the static site. Removed the duplicate root-config rules.
+
+## Expansion architecture scaffold — November 19, 2026
+
+- Inventoried 13 existing public routes and mapped 25 page records: 13 live, seven unpublished draft pages, four reserved pages, and one offering-confirmation route. Added five reusable reserved/conditional route patterns and eight unpublished page outlines. Drafts include section slots and inputs needed, without finished marketing content.
+- Proposed one shared product library plus separate operating-market and city-coverage records. The only market record is Tampa Bay, with unconfirmed contacts, office model, city/county boundaries, Google Business Profile and consultation destination left empty. No additional location or franchise is represented as operating.
+- Added a dependency-free architecture consistency check for unique routes/IDs, valid parent chains/market references, existing live files, matching sitemap coverage and exclusion of draft routes from dist/. The public renderer, website files, sitemap, navigation and form behavior were not changed.
+- Research used current primary Google guidance for doorway pages, business-profile eligibility and noindex. The plan distinguishes crawl/index controls from access control and does not treat city pages as new staffed branches.
+- Source validation passed for the architecture and all 13 live routes; Git whitespace checks passed. No browser/layout or accessibility retest was warranted because no published HTML/CSS/JavaScript changed. This is a proposed architecture, not a full SEO audit or a ranking forecast.
