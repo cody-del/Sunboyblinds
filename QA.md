@@ -186,3 +186,10 @@ Latest centered hero: two CTA designs and the requested Google/Facebook five-sta
 - Empty required inputs report valueMissing, malformed email reports typeMismatch, and synthetic valid values clear native invalid states. Fields have explicit labels and name/email/tel autocomplete. Only Full name carries the approved visible star. Test values were cleared by reloading; no requests were submitted.
 - Source checks passed for one H1 per page, unique IDs, local links/assets and every Book a Consultation destination across all three routes. JavaScript syntax and Git whitespace checks passed. Customer Copy Guard scanned all three public HTML files with zero blocking findings and zero review warnings, followed by contextual copy review.
 - Scope is the new page and changed shared navigation/CTA behavior. No axe scan, actual zoom test or screen-reader session was performed. Existing light-blue/white navbar-button contrast and required-label preferences remain recorded in earlier QA; no conformance claim is made.
+
+## Contact heading and card refinement — November 19, 2026
+
+- Kept the contact H1 on two lines using two block spans and font sizing relative to the intro column. Removed the description's restrictive width and made its text size responsive so “Window treatments for your Tampa Bay home.” fits on one line. Text remains literal HTML and can wrap when enlarged; no clipping or forced nowrap was added.
+- Moved the original Sunboy sunseal to the left of Book a Consultation and changed the contact-form button to Start a Consultation. Submission remains disabled per the user's earlier decision to connect delivery later.
+- Browser measurements at 1280px, 398px, 320px and 860px confirmed two H1 lines, one description line, and no horizontal overflow. At 320px the description is 12px, the badge precedes the title, and the button has the requested label. Visually reviewed the desktop and 398px mobile layouts. Shared header, form semantics and navigation behavior were not altered.
+- Git whitespace and public-copy checks passed. This was a scoped typography/layout change; no full accessibility audit or screen-reader session was performed.
