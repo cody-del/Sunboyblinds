@@ -121,6 +121,16 @@
       "scope": "shared_catalog"
     },
     {
+      "id": "roman-shades",
+      "title": "Roman Shades",
+      "url": "/shades/roman-shades/",
+      "type": "product",
+      "status": "live",
+      "parent_id": "shades",
+      "phase": "current",
+      "scope": "shared_catalog"
+    },
+    {
       "id": "horizontal-blinds",
       "title": "Horizontal Blinds",
       "url": "/blinds/horizontal-blinds/",

@@ -9,7 +9,7 @@ from service_area_pages import render as render_service_areas
 ROOT = Path(__file__).resolve().parents[1]
 DIST = ROOT / 'dist'
 ORIGIN = 'https://sunboyblinds.netlify.app'
-VERSION = 'exterior-shades-1'
+VERSION = 'roman-shades-1'
 DATA = json.loads((ROOT / 'src/catalog.json').read_text())
 PRODUCTS = {item['slug']: item for item in DATA['products']}
 HEADER = (ROOT / 'src/partials/header.html').read_text().strip()
@@ -99,7 +99,7 @@ for category in DATA['categories']:
     items = [p for p in DATA['products'] if p['category'] == category['slug']]
     photo = f'<div class="catalog-photo">{picture(category)}</div>' if category.get('image') else ''
     solo = ' catalog-hero-solo' if not photo else ''
-    grid_size = {1: 'one', 2: 'two', 3: 'three'}.get(len(items), 'four')
+    grid_size = {1: 'one', 2: 'two', 3: 'three', 5: 'three'}.get(len(items), 'four')
     content = f'''<section class="catalog-hero{solo}" aria-labelledby="catalog-title"><div class="catalog-hero-inner">
       <div class="catalog-intro">{crumbs}<h1 id="catalog-title">{category['title']} for your<br> Tampa Bay home.</h1><p>{escape(category['intro'])}</p><a class="sunboy-button catalog-button" href="#compare">Explore {category['title'].lower()}</a></div>
       {photo}

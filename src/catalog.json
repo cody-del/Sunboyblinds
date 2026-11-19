@@ -5,7 +5,7 @@
       "title": "Shades",
       "image": "shades.webp",
       "alt": "Light gray roller shades in a navy living room.",
-      "intro": "Start with the way you want your room to feel. Compare roller, solar, honeycomb, and woven wood shades, then take a closer look at the style that fits your home.",
+      "intro": "Start with the way you want your room to feel. Compare roller, solar, honeycomb, woven wood, and Roman shades, then take a closer look at the style that fits your home.",
       "heading": "Find your kind of shade.",
       "body": "A sunny living room and a quiet bedroom can ask for very different things. Fabric, privacy, texture, and the view outside all help guide your choice. Sunboy offers free in-home consultations and professional installation in the Tampa Bay area."
     },
@@ -116,6 +116,28 @@
         "honeycomb-shades"
       ],
       "source": "https://www.graberblinds.com/window-treatments/shades/natural-shades/"
+    },
+    {
+      "slug": "roman-shades",
+      "category": "shades",
+      "title": "Roman Shades",
+      "image": "roman-shades.webp",
+      "alt": "Textured white Roman shades on tall windows.",
+      "summary": "Fabric shades with soft, horizontal folds.",
+      "intro": "Roman shades bring fabric and layered folds to the window. Explore colors and textures that work with your room during a free in-home consultation.",
+      "heading": "Fabric, with a little more detail.",
+      "body": "Start with the fabric and the shape of the folds. Consider how each looks beside your furnishings, then talk through the daylight and privacy you want in the room.",
+      "consider": [
+        "Fabric color, pattern, and texture",
+        "The look of the folds at the window",
+        "Daylight and privacy needs"
+      ],
+      "related": [
+        "roller-shades",
+        "honeycomb-shades",
+        "woven-wood-shades"
+      ],
+      "source": "https://www.graberblinds.com/window-treatments/shades/roman-shades"
     },
     {
       "slug": "horizontal-blinds",

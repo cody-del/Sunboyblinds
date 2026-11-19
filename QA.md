@@ -250,3 +250,9 @@ Latest centered hero: two CTA designs and the requested Google/Facebook five-sta
 
 - Renamed the outdoor product to Exterior Shades in desktop/mobile navigation, coverage-page product links, product heading, breadcrumbs and metadata. Updated its short description and image alternative text to use the same name. The existing published URL and photo asset remain stable.
 - Regenerated all shared navigation and product/coverage HTML. Architecture validation and Git whitespace checks passed. A source-text check across all 19 public HTML pages confirmed no remaining customer-facing retractable wording, and verified both menu labels and the product H1. No layout, animation, form-delivery or indexability behavior changed.
+
+## Roman Shades addition — November 19, 2026
+
+- Added Roman Shades under Shades on desktop/mobile, to the Shades comparison page and to coverage-page product links. The menu opens /shades/roman-shades/, using the shared product template, real manufacturer photography and short introductory copy. Basic fabric/fold terminology was checked against Graber's official Roman Shades page; no manufacturer partnership, product performance or Sunboy project claim was added. The photo and source are recorded in product-page-photo-sources.json.
+- The five-product Shades grid uses three desktop columns and the existing two-column mobile layout. Current inventory is 20 HTML routes: 15 indexable and five noindex coverage previews. Architecture validation, customer-copy check (zero blockers or review warnings across 20 pages) and Git whitespace checks passed.
+- In-app browser checks at 1280px and 320px confirmed the menu destination, Roman Shades H1, loaded hero photo, no horizontal overflow, and mobile-menu closure after following the link. No browser errors were captured. Form delivery and coverage-preview indexability remain unchanged.

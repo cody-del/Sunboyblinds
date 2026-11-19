@@ -1,6 +1,6 @@
 # Sunboy website architecture
 
-Proposed structure, November 19, 2026. This is a plan and an unpublished page scaffold. The website now has 19 HTML routes: 14 indexable pages and five noindex layout previews for Service Area and the four counties. Editorial outlines stay outside `dist/`, Netlify's publish directory.
+Proposed structure, November 19, 2026. This is a plan and an unpublished page scaffold. The website now has 20 HTML routes: 15 indexable pages and five noindex layout previews for Service Area and the four counties. Editorial outlines stay outside `dist/`, Netlify's publish directory.
 
 ## Recommended foundation
 
@@ -53,7 +53,7 @@ The source outlines contain section placeholders and inputs needed. The owner ha
 
 Keep the existing category and product URLs:
 
-- `/shades/` with Roller, Solar, Honeycomb, and Woven Wood Shade pages.
+- `/shades/` with Roller, Solar, Honeycomb, Woven Wood, and Roman Shade pages.
 - `/blinds/` with Horizontal and Vertical Blind pages.
 - `/drapes/` links to the existing `/indoor/smartdrape/` product page.
 - `/outdoor/exterior-retractable-screens/`.
@@ -138,7 +138,7 @@ If a hosted review environment is needed later, use a controlled preview. A `noi
 
 ## Source files and validation
 
-- [routes.json](routes.json): 14 indexable routes, five published noindex previews, other proposed pages, statuses, parent relationships, reserved patterns and navigation plan.
+- [routes.json](routes.json): 15 indexable routes, five published noindex previews, other proposed pages, statuses, parent relationships, reserved patterns and navigation plan.
 - [markets.json](markets.json): initial operating-market record and future routing requirements.
 - [drafts/](drafts/): twelve unpublished page outlines, including four coverage hubs.
 
