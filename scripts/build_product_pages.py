@@ -9,7 +9,7 @@ from service_area_pages import render as render_service_areas
 ROOT = Path(__file__).resolve().parents[1]
 DIST = ROOT / 'dist'
 ORIGIN = 'https://sunboyblinds.netlify.app'
-VERSION = 'service-area-previews-1'
+VERSION = 'drapes-category-1'
 DATA = json.loads((ROOT / 'src/catalog.json').read_text())
 PRODUCTS = {item['slug']: item for item in DATA['products']}
 HEADER = (ROOT / 'src/partials/header.html').read_text().strip()
@@ -18,7 +18,7 @@ INFO = (ROOT / 'src/partials/info-dialog.html').read_text().strip()
 
 
 def url(item):
-    return f'/{item["category"]}/{item["slug"]}/'
+    return item.get('url') or f'/{item["category"]}/{item["slug"]}/'
 
 
 def picture(item, lazy=False):
@@ -97,12 +97,15 @@ for category in DATA['categories']:
     path = f'/{category["slug"]}/'
     crumbs, schema = breadcrumbs([(path, category['title'])])
     items = [p for p in DATA['products'] if p['category'] == category['slug']]
-    content = f'''<section class="catalog-hero" aria-labelledby="catalog-title"><div class="catalog-hero-inner">
+    photo = f'<div class="catalog-photo">{picture(category)}</div>' if category.get('image') else ''
+    solo = ' catalog-hero-solo' if not photo else ''
+    grid_size = {1: 'one', 2: 'two', 3: 'three'}.get(len(items), 'four')
+    content = f'''<section class="catalog-hero{solo}" aria-labelledby="catalog-title"><div class="catalog-hero-inner">
       <div class="catalog-intro">{crumbs}<h1 id="catalog-title">{category['title']} for your<br> Tampa Bay home.</h1><p>{escape(category['intro'])}</p><a class="sunboy-button catalog-button" href="#compare">Explore {category['title'].lower()}</a></div>
-      <div class="catalog-photo">{picture(category)}</div>
+      {photo}
     </div></section>
     <section class="catalog-content" id="compare" aria-labelledby="compare-title"><div class="catalog-section-intro"><h2 id="compare-title">{escape(category['heading'])}</h2><p>{escape(category['body'])}</p></div>
-      <ul class="catalog-grid catalog-grid-{"two" if len(items)==2 else "four"}">{''.join(card(item) for item in items)}</ul>
+      <ul class="catalog-grid catalog-grid-{grid_size}">{''.join(card(item) for item in items)}</ul>
     </section>'''
     save(path, document(f'{category["title"]} in Tampa Bay', category['intro'], path, content, schema))
 
@@ -115,7 +118,7 @@ for item in DATA['products']:
     solo = ' catalog-hero-solo' if not photo else ''
     related = [PRODUCTS[slug] for slug in item['related']]
     related_html = (f'<section class="catalog-related" aria-labelledby="related-title"><h2 id="related-title">'
-                    f'{"Compare more " + parent["title"].lower() if parent else "Explore indoor options"}</h2>'
+                    f'{"Compare more " + parent["title"].lower() if parent and all(p["category"] == parent["slug"] for p in related) else "Explore indoor options"}</h2>'
                     f'<ul class="catalog-grid catalog-grid-{"three" if len(related)==3 else "two"}">{"".join(card(p) for p in related)}</ul></section>') if related else ''
     content = f'''<section class="catalog-hero{solo}" aria-labelledby="catalog-title"><div class="catalog-hero-inner">
       <div class="catalog-intro">{crumbs}<h1 id="catalog-title">{escape(item['title'])}</h1><p>{escape(item['intro'])}</p><a class="sunboy-button catalog-button" href="/contact/">Book a Consultation</a></div>{photo}

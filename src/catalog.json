@@ -17,6 +17,15 @@
       "intro": "Choose the direction that works for your windows. Compare horizontal blinds for adjustable slat control with vertical blinds for wide windows and sliding doors.",
       "heading": "Two directions. Plenty to consider.",
       "body": "Look at the shape of the opening, the light you want to let in, and how often you use the window or door. A free in-home consultation gives us a chance to discuss those details in your Tampa Bay home before professional installation."
+    },
+    {
+      "slug": "drapes",
+      "title": "Drapes",
+      "image": null,
+      "alt": "",
+      "intro": "Explore SmartDrape for large windows and patio doors. Talk through fabric, light, and privacy choices during a free in-home consultation.",
+      "heading": "Explore SmartDrape.",
+      "body": "Our current drape offering is SmartDrape. Take a closer look at its soft fabric vanes and how it works across a wide opening."
     }
   ],
   "products": [
@@ -168,7 +177,7 @@
     },
     {
       "slug": "smartdrape",
-      "category": "indoor",
+      "category": "drapes",
       "title": "SmartDrape",
       "image": null,
       "summary": "Soft fabric vanes for large windows and patio doors.",
@@ -184,7 +193,8 @@
         "vertical-blinds",
         "roller-shades"
       ],
-      "source": "https://normanusa.com/product/smartdrape-shades/"
+      "source": "https://normanusa.com/product/smartdrape-shades/",
+      "url": "/indoor/smartdrape/"
     }
   ]
 }

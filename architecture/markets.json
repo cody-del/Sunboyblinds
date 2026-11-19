@@ -9,17 +9,26 @@
       "country": "US",
       "status": "initial_market",
       "coverage": {
-        "region": "Pinellas, Hillsborough, Manatee, and Sarasota counties, Florida",
+        "region": "Pinellas, Hillsborough, and Manatee counties, plus parts of southern Polk County, Florida",
         "confirmed_cities": [],
         "confirmed_counties": [
           "Pinellas County",
           "Hillsborough County",
-          "Manatee County",
-          "Sarasota County"
+          "Manatee County"
         ],
         "confirmed_postal_codes": [],
-        "boundary_confirmation": "county_level_confirmed",
-        "confirmation_source": "Owner confirmation, November 19, 2026; Hillsboro normalized to Hillsborough County, Florida."
+        "boundary_confirmation": "county_coverage_confirmed_partial_polk_boundaries_pending",
+        "confirmation_source": "Owner removed Sarasota and confirmed coverage only on the south side of Polk County, November 19, 2026.",
+        "partial_counties": [
+          {
+            "county": "Polk County",
+            "display_name": "South Polk County",
+            "coverage_description": "parts of southern Polk County",
+            "scope": "south side only",
+            "confirmed_cities": [],
+            "confirmed_postal_codes": []
+          }
+        ]
       },
       "operator": {
         "id": null,

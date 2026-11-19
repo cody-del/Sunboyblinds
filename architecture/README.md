@@ -1,6 +1,6 @@
 # Sunboy website architecture
 
-Proposed structure, November 19, 2026. This is a plan and an unpublished page scaffold. The website now has 18 HTML routes: 13 indexable pages and five noindex layout previews for Service Area and the four counties. Editorial outlines stay outside `dist/`, Netlify's publish directory.
+Proposed structure, November 19, 2026. This is a plan and an unpublished page scaffold. The website now has 19 HTML routes: 14 indexable pages and five noindex layout previews for Service Area and the four counties. Editorial outlines stay outside `dist/`, Netlify's publish directory.
 
 ## Recommended foundation
 
@@ -17,6 +17,7 @@ flowchart TD
     Brand --> Locations["Locations: local operating teams"]
     Catalog --> Shades["Shades and individual products"]
     Catalog --> Blinds["Blinds and individual products"]
+    Catalog --> Drapes["Drapes and SmartDrape"]
     Locations --> Tampa["Tampa Bay market record"]
     Locations --> Future["Future real operating markets"]
     Coverage -. "assigned to an operating market" .-> Tampa
@@ -54,7 +55,7 @@ Keep the existing category and product URLs:
 
 - `/shades/` with Roller, Solar, Honeycomb, and Woven Wood Shade pages.
 - `/blinds/` with Horizontal and Vertical Blind pages.
-- `/indoor/smartdrape/`.
+- `/drapes/` links to the existing `/indoor/smartdrape/` product page.
 - `/outdoor/exterior-retractable-screens/`.
 
 The existing homepage, contact page, accessibility page, catalog pages, and SmartDrape redirect remain in place. There is no URL migration in this architecture change.
@@ -72,7 +73,7 @@ Shutters remain a confirmation item: they appear in the earlier approved homepag
 | City coverage | `/service-area/{city-state}/` | Confirmed coverage, useful local details and links to the responsible operation |
 | Project | `/our-work/{project-slug}/` | Original work tied to a product, city and operating market |
 
-The initial Tampa Bay market serves Pinellas, Hillsborough, Manatee, and Sarasota counties. This remains one operating market. Its location-page route is reserved now, with an [unpublished outline](drafts/tampa-bay-market.md). No other market, office, address, local phone or Google Business Profile is invented.
+The initial Tampa Bay market serves Pinellas, Hillsborough, and Manatee counties, plus parts of southern Polk County. This remains one operating market. Its location-page route is reserved now, with an [unpublished outline](drafts/tampa-bay-market.md). No other market, office, address, local phone or Google Business Profile is invented.
 
 At launch, the homepage and Service Area page can explain the initial Tampa Bay coverage. A separate Tampa Bay operation page becomes useful when it has distinct local team/contact/project information, and before the homepage evolves into a broader brand page as other markets open. Avoid making two pages interchangeable.
 
@@ -84,14 +85,14 @@ City pages should help someone in that city, supported by actual coverage and lo
 
 ## Confirmed launch coverage
 
-The owner confirmed these four Florida counties on November 19, 2026. “Hillsboro” was interpreted as Hillsborough County using the [official Hillsborough County name](https://hcfl.gov/).
+The owner confirmed three full counties and partial coverage in southern Polk County on November 19, 2026. “Hillsboro” was interpreted as Hillsborough County using the [official Hillsborough County name](https://hcfl.gov/).
 
 | County | Planned coverage page | Outline |
 | --- | --- | --- |
 | Pinellas County | `/service-area/pinellas-county-fl/` | [Draft outline](drafts/pinellas-county-fl.md) |
 | Hillsborough County | `/service-area/hillsborough-county-fl/` | [Draft outline](drafts/hillsborough-county-fl.md) |
 | Manatee County | `/service-area/manatee-county-fl/` | [Draft outline](drafts/manatee-county-fl.md) |
-| Sarasota County | `/service-area/sarasota-county-fl/` | [Draft outline](drafts/sarasota-county-fl.md) |
+| South Polk County — south side only | `/service-area/south-polk-county-fl/` | [Draft outline](drafts/south-polk-county-fl.md) |
 
 These are county coverage pages for the same initial operation. They do not establish four branches. The owner requested placeholder layouts, so the four county pages and Service Area overview are now published for review with noindex, follow and excluded from the XML sitemap. Add useful local material before promoting them to indexable pages. City pages can be considered later without duplicating every product across every city.
 
@@ -137,8 +138,10 @@ If a hosted review environment is needed later, use a controlled preview. A `noi
 
 ## Source files and validation
 
-- [routes.json](routes.json): 13 indexable routes, five published noindex previews, other proposed pages, statuses, parent relationships, reserved patterns and navigation plan.
+- [routes.json](routes.json): 14 indexable routes, five published noindex previews, other proposed pages, statuses, parent relationships, reserved patterns and navigation plan.
 - [markets.json](markets.json): initial operating-market record and future routing requirements.
-- [drafts/](drafts/): twelve unpublished page outlines, including four county hubs.
+- [drafts/](drafts/): twelve unpublished page outlines, including four coverage hubs.
 
 Run `python3 scripts/check_site_architecture.py` from the repository root to verify route uniqueness, parent relationships, market references, live-file/sitemap coverage, exclusion of unbuilt draft routes from live output, and noindex/sitemap exclusion for the five layout previews. This is a project consistency check; it is not a ranking forecast or a full SEO audit.
+
+South Polk is explicitly partial coverage: only parts of the southern side are served. Specific towns and ZIP codes have not been confirmed. Sarasota has been removed from the current plan; its former preview URL redirects to the Service Area overview. The Indoor dropdown now groups SmartDrape beneath a clickable Drapes category heading.

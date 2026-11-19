@@ -11,7 +11,7 @@ This file is a page outline, not public website copy. It is outside the Netlify 
 
 [Content placeholder]
 
-### Confirmed four-county coverage
+### Confirmed service coverage
 
 [Content placeholder]
 
@@ -29,7 +29,7 @@ This file is a page outline, not public website copy. It is outside the Netlify 
 
 ## Inputs needed
 
-- Launch coverage is confirmed for Pinellas, Hillsborough, Manatee, and Sarasota counties.
+- Launch coverage is confirmed for Pinellas, Hillsborough, and Manatee counties, plus parts of southern Polk County.
 - County outlines are available below; city/postal-code detail can be added later when useful.
 - Do not describe a coverage city as a staffed office.
 
@@ -38,4 +38,4 @@ This file is a page outline, not public website copy. It is outside the Netlify 
 - [Pinellas County](pinellas-county-fl.md)
 - [Hillsborough County](hillsborough-county-fl.md)
 - [Manatee County](manatee-county-fl.md)
-- [Sarasota County](sarasota-county-fl.md)
+- [South Polk County — south side only](south-polk-county-fl.md)

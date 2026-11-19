@@ -24,7 +24,7 @@ This is a future local-operation page outline, not a claim of a public storefron
 - Pinellas County, Florida
 - Hillsborough County, Florida
 - Manatee County, Florida
-- Sarasota County, Florida
+- Parts of southern Polk County, Florida (south side only)
 
 ### Real work in this market
 

@@ -71,6 +71,16 @@
       "scope": "shared_catalog"
     },
     {
+      "id": "drapes",
+      "title": "Drapes",
+      "url": "/drapes/",
+      "type": "product_category",
+      "status": "live",
+      "parent_id": "home",
+      "phase": "current",
+      "scope": "shared_catalog"
+    },
+    {
       "id": "roller-shades",
       "title": "Roller Shades",
       "url": "/shades/roller-shades/",
@@ -146,7 +156,7 @@
       "url": "/indoor/smartdrape/",
       "type": "product",
       "status": "live",
-      "parent_id": "home",
+      "parent_id": "drapes",
       "phase": "current",
       "scope": "shared_catalog"
     },
@@ -255,10 +265,10 @@
       "scope": "brand",
       "draft_file": "architecture/drafts/service-area.md",
       "needs": [
-        "Launch counties are confirmed: Pinellas, Hillsborough, Manatee, and Sarasota counties.",
-        "Choose useful city pages later; no city/postal-code list is required for the county-level scaffold.",
-        "Use actual county-specific details and original work before publishing coverage pages.",
-        "Do not describe a coverage county or city as a staffed office."
+        "Confirmed full counties: Pinellas, Hillsborough, and Manatee.",
+        "Partial county: the south side of Polk County only.",
+        "Specific South Polk towns/ZIP codes remain unconfirmed.",
+        "Use actual local details and projects before indexing the preview pages."
       ],
       "sections": [
         {
@@ -268,7 +278,7 @@
         },
         {
           "slot": "2",
-          "label": "Confirmed four-county coverage",
+          "label": "Confirmed service coverage",
           "content": null
         },
         {
@@ -680,22 +690,22 @@
       "content_status": "placeholder"
     },
     {
-      "id": "sarasota-county-fl",
-      "title": "Sarasota County Service Area",
-      "url": "/service-area/sarasota-county-fl/",
+      "id": "south-polk-county-fl",
+      "title": "South Polk County Service Area",
+      "url": "/service-area/south-polk-county-fl/",
       "type": "coverage_county",
       "status": "preview",
       "parent_id": "service-area",
       "phase": "county_templates",
       "scope": "coverage",
       "market_id": "tampa-bay-fl",
-      "county": "Sarasota County",
+      "county": "Polk County",
       "state": "FL",
-      "draft_file": "architecture/drafts/sarasota-county-fl.md",
+      "draft_file": "architecture/drafts/south-polk-county-fl.md",
       "needs": [
-        "County-level service coverage is owner-confirmed.",
-        "Add useful county-specific details and genuine local proof before publication.",
-        "This is a coverage page, not a separate office or franchise location."
+        "Only the southern part of Polk County is served.",
+        "Specific towns and ZIP codes remain unconfirmed; do not imply full-county coverage.",
+        "Add useful local details and genuine projects before making the preview indexable."
       ],
       "sections": [
         {
@@ -730,7 +740,11 @@
         }
       ],
       "robots": "noindex, follow",
-      "content_status": "placeholder"
+      "content_status": "placeholder",
+      "area_label": "South Polk County",
+      "coverage_description": "parts of southern Polk County",
+      "coverage_scope": "partial_county",
+      "selector_detail": "South side only"
     }
   ],
   "route_templates": [

@@ -18,6 +18,7 @@ assert not [key for key, count in Counter(urls).items() if count > 1], 'Duplicat
 assert plan['publication']['live_directory'] == 'dist'
 assert plan['publication']['include_in_live_sitemap'] == ['live']
 market_ids = {market['id'] for market in markets['markets']}
+markets_by_id = {market['id']: market for market in markets['markets']}
 assert plan['default_market_id'] in market_ids
 by_id = {page['id']: page for page in pages}
 live_urls = set()
@@ -49,6 +50,15 @@ for page in pages:
         parent = by_id[parent]['parent_id']
     if page.get('market_id'):
         assert page['market_id'] in market_ids, page['id']
+    if page['type'] == 'coverage_county' and page['status'] in ('live', 'preview'):
+        coverage = markets_by_id[page['market_id']]['coverage']
+        if page.get('coverage_scope') == 'partial_county':
+            partial = next((area for area in coverage.get('partial_counties', [])
+                            if area['county'] == page['county']), None)
+            assert partial and partial['coverage_description'] == page['coverage_description'], page['id']
+            assert page.get('area_label') and page.get('selector_detail'), page['id']
+        else:
+            assert page['county'] in coverage['confirmed_counties'], (page['id'], 'county scope not confirmed')
     target = DIST / url.strip('/') / 'index.html'
     if page['status'] in ('live', 'preview'):
         assert target.is_file(), (url, 'missing live page')
