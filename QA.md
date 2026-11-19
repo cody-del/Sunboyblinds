@@ -169,3 +169,10 @@ Latest centered hero: two CTA designs and the requested Google/Facebook five-sta
 - Adjusted navbar CTA spacing below 400px and logo/button widths below 340px so the longer label fits. At 320px, the menu's right edge is 292px inside a 304px header boundary; document width equals viewport width. Also checked 390px and 1280px without horizontal overflow.
 - Keyboard Enter reached #consultation on desktop and mobile. The mobile menu was closed afterward and the film dialog remained closed. JavaScript syntax and Git whitespace checks passed.
 - Updated the accessibility-page Escape instruction to refer to dialogs. Existing form submission remains disabled until a destination is configured; navigation to the form is functional. This was a scoped interaction/layout check, not a full accessibility audit or screen-reader session.
+
+## Supplied SVG navbar wordmark — November 19, 2026
+
+- Replaced the navbar PNG with the user-supplied sunboy-wordmark-blue.svg on the homepage and accessibility route. Copied the SVG byte-for-byte; Downloads original is unchanged. Footer logo and pendant are unchanged.
+- Removed the PNG crop positioning from navbar images only. The SVG uses object-fit:contain inside the existing responsive logo box, preserving its proportions and all lettering.
+- Browser checks at 1280px and 320px confirmed the asset loads and fits. Desktop logo box is 166×64px; narrow-mobile box is 104×54px. At 320px, the menu stays inside the header and document width equals viewport width. The accessibility-page navbar also loads the SVG without overflow.
+- SVG XML/source integrity and Git whitespace checks passed. This was a scoped visual change; existing form and contact limitations remain unchanged.
