@@ -30,7 +30,7 @@ The diagram describes relationships, not a sequence of clicks. The dropdown cont
 | --- | --- | --- | --- |
 | Services | `/services/` | Explain the confirmed consultation and installation offer | Unpublished outline |
 | About | `/about/` | Introduce the real company and team | Unpublished outline |
-| Service Area | `/service-area/` | Explain confirmed Tampa Bay coverage | Unpublished outline; city/county list needed |
+| Service Area | `/service-area/` | Explain confirmed four-county coverage | Unpublished outline; counties confirmed |
 | Our Work | `/our-work/` | Show actual completed Sunboy projects | Unpublished outline; original projects needed |
 | Reviews | `/reviews/` | Present authentic reviews and their sources | Unpublished outline; verified sources needed |
 | FAQs | `/faqs/` | Answer real consultation, installation and product questions | Unpublished outline |
@@ -72,7 +72,7 @@ Shutters remain a confirmation item: they appear in the earlier approved homepag
 | City coverage | `/service-area/{city-state}/` | Confirmed coverage, useful local details and links to the responsible operation |
 | Project | `/our-work/{project-slug}/` | Original work tied to a product, city and operating market |
 
-Tampa Bay is the only confirmed market. Its location-page route is reserved now, with an [unpublished outline](drafts/tampa-bay-market.md). No other market, office, address, local phone or Google Business Profile is invented.
+The initial Tampa Bay market serves Pinellas, Hillsborough, Manatee, and Sarasota counties. This remains one operating market. Its location-page route is reserved now, with an [unpublished outline](drafts/tampa-bay-market.md). No other market, office, address, local phone or Google Business Profile is invented.
 
 At launch, the homepage and Service Area page can explain the initial Tampa Bay coverage. A separate Tampa Bay operation page becomes useful when it has distinct local team/contact/project information, and before the homepage evolves into a broader brand page as other markets open. Avoid making two pages interchangeable.
 
@@ -82,13 +82,26 @@ Google's Business Profile guidance distinguishes service coverage from separatel
 
 City pages should help someone in that city, supported by actual coverage and local material. Google identifies substantially similar regional/city pages that funnel users to a common destination as examples of doorway abuse. This is a reason to plan useful local pages selectively, not a rule that all city pages are inappropriate. [Google's doorway policy](https://developers.google.com/search/docs/essentials/spam-policies#doorway-abuse)
 
+## Confirmed launch coverage
+
+The owner confirmed these four Florida counties on November 19, 2026. “Hillsboro” was interpreted as Hillsborough County using the [official Hillsborough County name](https://hcfl.gov/).
+
+| County | Planned coverage page | Outline |
+| --- | --- | --- |
+| Pinellas County | `/service-area/pinellas-county-fl/` | [Draft outline](drafts/pinellas-county-fl.md) |
+| Hillsborough County | `/service-area/hillsborough-county-fl/` | [Draft outline](drafts/hillsborough-county-fl.md) |
+| Manatee County | `/service-area/manatee-county-fl/` | [Draft outline](drafts/manatee-county-fl.md) |
+| Sarasota County | `/service-area/sarasota-county-fl/` | [Draft outline](drafts/sarasota-county-fl.md) |
+
+These are county coverage pages for the same initial operation. They do not establish four branches. Keep the pages unpublished while they contain placeholders, then add genuinely useful local material before launch. City pages can be considered later without duplicating every product across every city.
+
 ## Data that allows expansion
 
 [markets.json](markets.json) contains a single initial Tampa Bay record, with unknown details left empty. Its stable market ID is `tampa-bay-fl`. The structure has room for:
 
 - The operating team/entity and ownership model.
 - Verified contacts, customer-visit model and hours.
-- Confirmed cities, counties and postal codes.
+- Confirmed launch counties, with room for city/postal-code details later.
 - Local product availability referencing the shared catalog.
 - Original projects and verified review sources.
 - The destination for consultation requests.
@@ -116,9 +129,9 @@ If a hosted review environment is needed later, use a controlled preview. A `noi
 
 ## Next steps
 
-1. Confirm the final business domain and exact launch service area. The current configured origin is the Netlify subdomain; no business domain has been supplied here.
+1. Confirm the final business domain. The current configured origin is the Netlify subdomain; no business domain has been supplied here. Launch coverage is already confirmed at county level.
 2. Review the page map and build the Services, About, and Service Area layouts from the existing Sunboy design, using the unpublished outlines.
-3. Establish the Tampa Bay facts needed for local pages: real team/contact information, coverage and original projects. Publish selected city pages as that material becomes useful and available.
+3. Build the four county coverage templates using the confirmed service area. Add real team/contact information and original projects; select city pages later as useful local material becomes available.
 4. Complete supporting pages and connect the consultation form when its actual destination is chosen.
 5. Reuse the market template when a real new operation opens. Review shared Tampa Bay-specific wording before introducing a broader brand homepage and catalog presentation.
 
@@ -126,6 +139,6 @@ If a hosted review environment is needed later, use a controlled preview. A `noi
 
 - [routes.json](routes.json): 13 live routes, proposed pages, statuses, parent relationships, reserved patterns and navigation plan.
 - [markets.json](markets.json): initial operating-market record and future routing requirements.
-- [drafts/](drafts/): eight unpublished page outlines.
+- [drafts/](drafts/): twelve unpublished page outlines, including four county hubs.
 
 Run `python3 scripts/check_site_architecture.py` from the repository root to verify route uniqueness, parent relationships, market references, live-file/sitemap coverage, and exclusion of the new draft routes from the live output. This is a project consistency check; it is not a ranking forecast or a full SEO audit.

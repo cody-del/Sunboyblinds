@@ -21,7 +21,10 @@ This is a future local-operation page outline, not a claim of a public storefron
 
 ### Confirmed service coverage
 
-[Cities/counties pending owner confirmation]
+- Pinellas County, Florida
+- Hillsborough County, Florida
+- Manatee County, Florida
+- Sarasota County, Florida
 
 ### Real work in this market
 

@@ -253,9 +253,10 @@
       "scope": "brand",
       "draft_file": "architecture/drafts/service-area.md",
       "needs": [
-        "Confirm launch cities/counties/postal codes.",
-        "Tampa Bay is the only regional coverage currently confirmed.",
-        "Do not describe a coverage city as a staffed office."
+        "Launch counties are confirmed: Pinellas, Hillsborough, Manatee, and Sarasota counties.",
+        "Choose useful city pages later; no city/postal-code list is required for the county-level scaffold.",
+        "Use actual county-specific details and original work before publishing coverage pages.",
+        "Do not describe a coverage county or city as a staffed office."
       ],
       "sections": [
         {
@@ -265,12 +266,12 @@
         },
         {
           "slot": "2",
-          "label": "Confirmed Tampa Bay coverage",
+          "label": "Confirmed four-county coverage",
           "content": null
         },
         {
           "slot": "3",
-          "label": "City or county coverage list",
+          "label": "Links to the four county coverage pages",
           "content": null
         },
         {
@@ -514,6 +515,210 @@
       "phase": "offering_confirmation",
       "scope": "shared_catalog",
       "publish_when": "Reconfirm the offering. Shutters appear in the earlier approved homepage row but were absent from the latest detailed product list."
+    },
+    {
+      "id": "pinellas-county-fl",
+      "title": "Pinellas County Service Area",
+      "url": "/service-area/pinellas-county-fl/",
+      "type": "coverage_county",
+      "status": "draft",
+      "parent_id": "service-area",
+      "phase": "county_templates",
+      "scope": "coverage",
+      "market_id": "tampa-bay-fl",
+      "county": "Pinellas County",
+      "state": "FL",
+      "draft_file": "architecture/drafts/pinellas-county-fl.md",
+      "needs": [
+        "County-level service coverage is owner-confirmed.",
+        "Add useful county-specific details and genuine local proof before publication.",
+        "This is a coverage page, not a separate office or franchise location."
+      ],
+      "sections": [
+        {
+          "slot": "1",
+          "label": "Page heading",
+          "content": null
+        },
+        {
+          "slot": "2",
+          "label": "Confirmed county coverage",
+          "content": null
+        },
+        {
+          "slot": "3",
+          "label": "Links to the shared product catalog",
+          "content": null
+        },
+        {
+          "slot": "4",
+          "label": "In-home consultation and installation",
+          "content": null
+        },
+        {
+          "slot": "5",
+          "label": "Original local work and verified reviews",
+          "content": null
+        },
+        {
+          "slot": "6",
+          "label": "Consultation link",
+          "content": null
+        }
+      ]
+    },
+    {
+      "id": "hillsborough-county-fl",
+      "title": "Hillsborough County Service Area",
+      "url": "/service-area/hillsborough-county-fl/",
+      "type": "coverage_county",
+      "status": "draft",
+      "parent_id": "service-area",
+      "phase": "county_templates",
+      "scope": "coverage",
+      "market_id": "tampa-bay-fl",
+      "county": "Hillsborough County",
+      "state": "FL",
+      "draft_file": "architecture/drafts/hillsborough-county-fl.md",
+      "needs": [
+        "County-level service coverage is owner-confirmed.",
+        "Add useful county-specific details and genuine local proof before publication.",
+        "This is a coverage page, not a separate office or franchise location."
+      ],
+      "sections": [
+        {
+          "slot": "1",
+          "label": "Page heading",
+          "content": null
+        },
+        {
+          "slot": "2",
+          "label": "Confirmed county coverage",
+          "content": null
+        },
+        {
+          "slot": "3",
+          "label": "Links to the shared product catalog",
+          "content": null
+        },
+        {
+          "slot": "4",
+          "label": "In-home consultation and installation",
+          "content": null
+        },
+        {
+          "slot": "5",
+          "label": "Original local work and verified reviews",
+          "content": null
+        },
+        {
+          "slot": "6",
+          "label": "Consultation link",
+          "content": null
+        }
+      ]
+    },
+    {
+      "id": "manatee-county-fl",
+      "title": "Manatee County Service Area",
+      "url": "/service-area/manatee-county-fl/",
+      "type": "coverage_county",
+      "status": "draft",
+      "parent_id": "service-area",
+      "phase": "county_templates",
+      "scope": "coverage",
+      "market_id": "tampa-bay-fl",
+      "county": "Manatee County",
+      "state": "FL",
+      "draft_file": "architecture/drafts/manatee-county-fl.md",
+      "needs": [
+        "County-level service coverage is owner-confirmed.",
+        "Add useful county-specific details and genuine local proof before publication.",
+        "This is a coverage page, not a separate office or franchise location."
+      ],
+      "sections": [
+        {
+          "slot": "1",
+          "label": "Page heading",
+          "content": null
+        },
+        {
+          "slot": "2",
+          "label": "Confirmed county coverage",
+          "content": null
+        },
+        {
+          "slot": "3",
+          "label": "Links to the shared product catalog",
+          "content": null
+        },
+        {
+          "slot": "4",
+          "label": "In-home consultation and installation",
+          "content": null
+        },
+        {
+          "slot": "5",
+          "label": "Original local work and verified reviews",
+          "content": null
+        },
+        {
+          "slot": "6",
+          "label": "Consultation link",
+          "content": null
+        }
+      ]
+    },
+    {
+      "id": "sarasota-county-fl",
+      "title": "Sarasota County Service Area",
+      "url": "/service-area/sarasota-county-fl/",
+      "type": "coverage_county",
+      "status": "draft",
+      "parent_id": "service-area",
+      "phase": "county_templates",
+      "scope": "coverage",
+      "market_id": "tampa-bay-fl",
+      "county": "Sarasota County",
+      "state": "FL",
+      "draft_file": "architecture/drafts/sarasota-county-fl.md",
+      "needs": [
+        "County-level service coverage is owner-confirmed.",
+        "Add useful county-specific details and genuine local proof before publication.",
+        "This is a coverage page, not a separate office or franchise location."
+      ],
+      "sections": [
+        {
+          "slot": "1",
+          "label": "Page heading",
+          "content": null
+        },
+        {
+          "slot": "2",
+          "label": "Confirmed county coverage",
+          "content": null
+        },
+        {
+          "slot": "3",
+          "label": "Links to the shared product catalog",
+          "content": null
+        },
+        {
+          "slot": "4",
+          "label": "In-home consultation and installation",
+          "content": null
+        },
+        {
+          "slot": "5",
+          "label": "Original local work and verified reviews",
+          "content": null
+        },
+        {
+          "slot": "6",
+          "label": "Consultation link",
+          "content": null
+        }
+      ]
     }
   ],
   "route_templates": [
@@ -541,6 +746,20 @@
         "city_state_slug"
       ],
       "rule": "Create selectively for confirmed service coverage with distinct useful local material. Do not generate every city/product combination."
+    },
+    {
+      "id": "coverage-county",
+      "pattern": "/service-area/{county}-county-{state}/",
+      "type": "coverage_county",
+      "status": "draft",
+      "required_keys": [
+        "market_id",
+        "county",
+        "state",
+        "county_slug",
+        "state_slug"
+      ],
+      "rule": "County coverage hubs link to the shared catalog and responsible operation. Only the four owner-confirmed launch counties are scaffolded; this does not create new offices."
     },
     {
       "id": "project",

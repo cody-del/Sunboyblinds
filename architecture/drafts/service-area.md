@@ -11,11 +11,11 @@ This file is a page outline, not public website copy. It is outside the Netlify 
 
 [Content placeholder]
 
-### Confirmed Tampa Bay coverage
+### Confirmed four-county coverage
 
 [Content placeholder]
 
-### City or county coverage list
+### Links to the four county coverage pages
 
 [Content placeholder]
 
@@ -29,6 +29,13 @@ This file is a page outline, not public website copy. It is outside the Netlify 
 
 ## Inputs needed
 
-- Confirm launch cities/counties/postal codes.
-- Tampa Bay is the only regional coverage currently confirmed.
+- Launch coverage is confirmed for Pinellas, Hillsborough, Manatee, and Sarasota counties.
+- County outlines are available below; city/postal-code detail can be added later when useful.
 - Do not describe a coverage city as a staffed office.
+
+## Confirmed county page outlines
+
+- [Pinellas County](pinellas-county-fl.md)
+- [Hillsborough County](hillsborough-county-fl.md)
+- [Manatee County](manatee-county-fl.md)
+- [Sarasota County](sarasota-county-fl.md)

@@ -9,11 +9,17 @@
       "country": "US",
       "status": "initial_market",
       "coverage": {
-        "region": "Tampa Bay area",
+        "region": "Pinellas, Hillsborough, Manatee, and Sarasota counties, Florida",
         "confirmed_cities": [],
-        "confirmed_counties": [],
+        "confirmed_counties": [
+          "Pinellas County",
+          "Hillsborough County",
+          "Manatee County",
+          "Sarasota County"
+        ],
         "confirmed_postal_codes": [],
-        "boundary_confirmation": "pending"
+        "boundary_confirmation": "county_level_confirmed",
+        "confirmation_source": "Owner confirmation, November 19, 2026; Hillsboro normalized to Hillsborough County, Florida."
       },
       "operator": {
         "id": null,

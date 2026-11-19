@@ -221,3 +221,9 @@ Latest centered hero: two CTA designs and the requested Google/Facebook five-sta
 - Added a dependency-free architecture consistency check for unique routes/IDs, valid parent chains/market references, existing live files, matching sitemap coverage and exclusion of draft routes from dist/. The public renderer, website files, sitemap, navigation and form behavior were not changed.
 - Research used current primary Google guidance for doorway pages, business-profile eligibility and noindex. The plan distinguishes crawl/index controls from access control and does not treat city pages as new staffed branches.
 - Source validation passed for the architecture and all 13 live routes; Git whitespace checks passed. No browser/layout or accessibility retest was warranted because no published HTML/CSS/JavaScript changed. This is a proposed architecture, not a full SEO audit or a ranking forecast.
+
+## Confirmed launch counties — November 19, 2026
+
+- Owner confirmed Pinellas, Hillsborough, Manatee and Sarasota counties. Interpreted the supplied Hillsboro as Hillsborough County, Florida, checking the official county name at https://hcfl.gov/.
+- Updated the initial market coverage record, Service Area outline, reserved Tampa Bay operation outline, architecture plan and route inventory. Added four unpublished county page outlines under /service-area/{county}-county-fl/. City/ZIP records remain empty; no additional branches or Google Business Profiles were created.
+- Architecture now has 29 page records: 13 live, 11 draft, four reserved and one conditional, with 12 unpublished outlines. The four coverage pages remain outside the live build and sitemap. No published HTML/CSS/JavaScript or form behavior changed.
