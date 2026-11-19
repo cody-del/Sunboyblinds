@@ -1,0 +1,42 @@
+[
+  {
+    "category": "solar-shades",
+    "page": "https://www.graberblinds.com/window-treatments/shades/solar-shades/",
+    "image_url": "https://embed.widencdn.net/img/springswindowfashions/30rytanulx/800x700px/graber-48208-solar-shades-rs24-v1.webp?crop=yes&keep=c&quality=80&u=docgsq",
+    "file": "solar-shades.webp",
+    "provider": "Graber / Springs Window Fashions",
+    "bytes": 66992
+  },
+  {
+    "category": "honeycomb-shades",
+    "page": "https://www.graberblinds.com/window-treatments/shades/cellular-shades/",
+    "image_url": "https://embed.widencdn.net/img/springswindowfashions/rlivpelyfx/800x700px/graber-1131-cellular-shades-rs22-v1.webp?crop=true&keep=c&u=sepr1w",
+    "file": "honeycomb-shades.webp",
+    "provider": "Graber / Springs Window Fashions",
+    "bytes": 54178
+  },
+  {
+    "category": "woven-wood-shades",
+    "page": "https://www.graberblinds.com/window-treatments/shades/natural-shades/",
+    "image_url": "https://embed.widencdn.net/img/springswindowfashions/xcohdu7zwz/800x700px/graber-60771-natural-shades-rs21-v1.webp?crop=true&keep=c&u=sepr1w",
+    "file": "woven-wood-shades.webp",
+    "provider": "Graber / Springs Window Fashions",
+    "bytes": 114338
+  },
+  {
+    "category": "vertical-blinds",
+    "page": "https://www.graberblinds.com/window-treatments/blinds/vertical-blinds/",
+    "image_url": "https://embed.widencdn.net/img/springswindowfashions/yn0tdcnrwe/800x700px/graber-3131-vinyl-vertical-blinds-rs22-v2.webp?crop=yes&keep=c&quality=80&u=docgsq",
+    "file": "vertical-blinds.webp",
+    "provider": "Graber / Springs Window Fashions",
+    "bytes": 62384
+  },
+  {
+    "category": "exterior-retractable-screens",
+    "page": "https://www.phantomscreens.com/retractable-screens/motorized-screens/",
+    "image_url": "https://www.phantomscreens.com/wp-content/uploads/2024/10/4-7-5.jpg",
+    "file": "exterior-retractable-screens.jpg",
+    "provider": "Phantom Screens",
+    "bytes": 159493
+  }
+]

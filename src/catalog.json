@@ -1,0 +1,190 @@
+{
+  "categories": [
+    {
+      "slug": "shades",
+      "title": "Shades",
+      "image": "shades.webp",
+      "alt": "Light gray roller shades in a navy living room.",
+      "intro": "Start with the way you want your room to feel. Compare roller, solar, honeycomb, and woven wood shades, then take a closer look at the style that fits your home.",
+      "heading": "Find your kind of shade.",
+      "body": "A sunny living room and a quiet bedroom can ask for very different things. Fabric, privacy, texture, and the view outside all help guide your choice. Sunboy offers free in-home consultations and professional installation in the Tampa Bay area."
+    },
+    {
+      "slug": "blinds",
+      "title": "Blinds",
+      "image": "blinds.webp",
+      "alt": "Horizontal blinds fitted inside a bedroom window.",
+      "intro": "Choose the direction that works for your windows. Compare horizontal blinds for adjustable slat control with vertical blinds for wide windows and sliding doors.",
+      "heading": "Two directions. Plenty to consider.",
+      "body": "Look at the shape of the opening, the light you want to let in, and how often you use the window or door. A free in-home consultation gives us a chance to discuss those details in your Tampa Bay home before professional installation."
+    }
+  ],
+  "products": [
+    {
+      "slug": "roller-shades",
+      "category": "shades",
+      "title": "Roller Shades",
+      "image": "shades.webp",
+      "alt": "Light gray roller shades in a navy living room.",
+      "summary": "A simple fabric shade with a clean, uncluttered finish.",
+      "intro": "Roller shades keep the window simple: a fabric panel rolls up at the top of the opening. They work well when you want the fabric and the room to do the talking.",
+      "heading": "Keep the lines clean.",
+      "body": "The fabric makes a big difference to the finished room. A light-filtering fabric creates a different effect from a room-darkening one, so start with your privacy needs and the amount of daylight you want. We can discuss those priorities during your free in-home consultation.",
+      "consider": [
+        "The amount of daylight you want to keep",
+        "Privacy needs in the room",
+        "Fabric color and texture beside your furnishings"
+      ],
+      "related": [
+        "solar-shades",
+        "honeycomb-shades",
+        "woven-wood-shades"
+      ],
+      "source": "https://www.graberblinds.com/window-treatments/shades/roller-shades/"
+    },
+    {
+      "slug": "solar-shades",
+      "category": "shades",
+      "title": "Solar Shades",
+      "image": "solar-shades.webp",
+      "alt": "Dark solar shades above the windows of a green kitchen.",
+      "summary": "A woven screen fabric that balances sunlight and your view.",
+      "intro": "Solar shades use screen-like fabric to filter sunlight while preserving some view outdoors. They are worth considering for bright windows where glare is part of everyday life.",
+      "heading": "Make room for the view.",
+      "body": "Fabric openness changes the balance between the view and sun control. Your room's lighting and sightlines also matter when privacy is a priority. We will talk through how you use the room so you can compare solar shades with other shade styles before choosing.",
+      "consider": [
+        "Which windows get the strongest sun",
+        "How much of the outdoor view you want to retain",
+        "The room's privacy needs and lighting"
+      ],
+      "related": [
+        "roller-shades",
+        "honeycomb-shades",
+        "woven-wood-shades"
+      ],
+      "source": "https://www.graberblinds.com/window-treatments/shades/solar-shades/"
+    },
+    {
+      "slug": "honeycomb-shades",
+      "category": "shades",
+      "title": "Honeycomb Shades",
+      "image": "honeycomb-shades.webp",
+      "alt": "Off-white cellular shades on tall bedroom windows.",
+      "summary": "Soft fabric folds with a cellular structure inside.",
+      "intro": "Honeycomb shades, also called cellular shades, fold into a compact stack. Their cellular structure traps air, bringing an insulating layer to the window along with a soft fabric finish.",
+      "heading": "A softer side to the window.",
+      "body": "The small pleats make honeycomb shades easy to pair with a range of room styles. Compare fabric opacity with the daylight and privacy you want, then consider how the shade will sit within the opening. Your in-home consultation helps bring those choices into context.",
+      "consider": [
+        "The balance of daylight and privacy",
+        "Fabric color against your walls and trim",
+        "How the shade fits within the window opening"
+      ],
+      "related": [
+        "roller-shades",
+        "solar-shades",
+        "woven-wood-shades"
+      ],
+      "source": "https://www.graberblinds.com/window-treatments/shades/cellular-shades/"
+    },
+    {
+      "slug": "woven-wood-shades",
+      "category": "shades",
+      "title": "Woven Wood Shades",
+      "image": "woven-wood-shades.webp",
+      "alt": "Woven shades on the windows of a light-colored living room.",
+      "summary": "Natural-looking texture and variation in the weave.",
+      "intro": "Woven wood shades bring visible texture to the window. Natural materials and variations in the weave give them a different character from a smooth fabric shade.",
+      "heading": "Let texture lead.",
+      "body": "The weave affects both the appearance of the shade and the light passing through it. Look at it beside the wood tones, fabrics, and finishes already in your room. We can discuss privacy and any lining needs during your consultation before you settle on a choice.",
+      "consider": [
+        "The texture and openness of the weave",
+        "Privacy and lining needs",
+        "How natural tones work with your room"
+      ],
+      "related": [
+        "roller-shades",
+        "solar-shades",
+        "honeycomb-shades"
+      ],
+      "source": "https://www.graberblinds.com/window-treatments/shades/natural-shades/"
+    },
+    {
+      "slug": "horizontal-blinds",
+      "category": "blinds",
+      "title": "Horizontal Blinds",
+      "image": "blinds.webp",
+      "alt": "Horizontal blinds fitted inside a bedroom window.",
+      "summary": "Tilting horizontal slats for everyday light and privacy control.",
+      "intro": "Horizontal blinds let you adjust the light by tilting the slats. That makes them a familiar choice when you want to change privacy and daylight throughout the day.",
+      "heading": "Adjust the light, slat by slat.",
+      "body": "The finish, slat proportions, and window depth all affect how a blind looks in place. The room matters too: moisture, cleaning, and everyday use are useful things to discuss before choosing. Sunboy brings that conversation into your home with a free consultation.",
+      "consider": [
+        "Window depth and the space around the opening",
+        "The finish that works with your trim",
+        "Everyday cleaning and room conditions"
+      ],
+      "related": [
+        "vertical-blinds"
+      ],
+      "source": "https://www.graberblinds.com/window-treatments/blinds/wood-blinds/"
+    },
+    {
+      "slug": "vertical-blinds",
+      "category": "blinds",
+      "title": "Vertical Blinds",
+      "image": "vertical-blinds.webp",
+      "alt": "White vertical blinds beside a kitchen island.",
+      "summary": "Vertical vanes for wide windows and sliding doors.",
+      "intro": "Vertical blinds use upright vanes that rotate to adjust the light and draw to the side for access. They are a practical style to consider for sliding doors and wide window openings.",
+      "heading": "Think beyond the window.",
+      "body": "For a frequently used door, look at the walking route as well as the light. Where the vanes stack, how the controls feel, and the space beside the opening all deserve attention. Your consultation is a chance to work through those details in the room itself.",
+      "consider": [
+        "How often you use the door or opening",
+        "Where the vanes will stack when open",
+        "The balance of daylight and privacy"
+      ],
+      "related": [
+        "horizontal-blinds"
+      ],
+      "source": "https://www.graberblinds.com/window-treatments/blinds/vertical-blinds/"
+    },
+    {
+      "slug": "exterior-retractable-screens",
+      "category": "outdoor",
+      "title": "Exterior Retractable Screens",
+      "image": "exterior-retractable-screens.jpg",
+      "alt": "Retractable screens around a covered outdoor seating area.",
+      "summary": "Screens that lower when you need them and retract to clear the opening.",
+      "intro": "Make more use of a covered patio, porch, or lanai with a screen that retracts when you want the opening clear. Start with the space and the way you spend time outside.",
+      "heading": "Plan around your outdoor space.",
+      "body": "Mesh selection changes the balance of shade, airflow, visibility, and insect screening. The opening and mounting area matter as much as the look. During your free in-home consultation, we can discuss your priorities and assess the space for a suitable installation.",
+      "consider": [
+        "The dimensions and structure of the opening",
+        "Shade, visibility, and insect-screening priorities",
+        "Where the screen will sit when retracted"
+      ],
+      "related": [],
+      "source": "https://www.phantomscreens.com/retractable-screens/motorized-screens/"
+    },
+    {
+      "slug": "smart-dreams",
+      "category": "indoor",
+      "title": "Smart Dreams",
+      "image": null,
+      "summary": "Explore Smart Dreams during a free in-home consultation.",
+      "intro": "Interested in Smart Dreams for your Tampa Bay home? Start with a free in-home consultation so we can talk through your windows, your room, and what you want from your new treatment.",
+      "heading": "Start with the room.",
+      "body": "Think about when the room is brightest, where privacy matters, and how often you move through the opening. Bring those questions to your consultation. We can work through your priorities in the space itself and discuss professional installation.",
+      "consider": [
+        "Which windows or doors you want to cover",
+        "Your light and privacy priorities",
+        "The colors and finishes already in the room"
+      ],
+      "related": [
+        "vertical-blinds",
+        "roller-shades"
+      ],
+      "source": "User-supplied product name; manufacturer and specifications not confirmed."
+    }
+  ]
+}

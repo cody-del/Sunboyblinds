@@ -75,7 +75,23 @@ dialog?.addEventListener('close', () => {
   dialogTrigger?.focus();
 });
 
+const productDropdowns = [...document.querySelectorAll('.nav-disclosure')];
+function closeProductDropdowns(except) {
+  productDropdowns.forEach(dropdown => {
+    if (dropdown !== except) dropdown.open = false;
+  });
+}
+productDropdowns.forEach(dropdown => dropdown.addEventListener('toggle', () => {
+  if (dropdown.open) closeProductDropdowns(dropdown);
+}));
+document.addEventListener('focusin', event => {
+  closeProductDropdowns(event.target.closest('.nav-disclosure'));
+});
+document.querySelectorAll('.nav-product-dropdown a').forEach(link => link.addEventListener('click', closeMenu));
+matchMedia('(max-width: 960px)').addEventListener('change', closeMenu);
+
 function closeMenu() {
+  closeProductDropdowns();
   mobileNav.hidden = true;
   menuToggle.setAttribute('aria-expanded', 'false');
   menuToggle.setAttribute('aria-label', 'Open navigation menu');
@@ -88,17 +104,21 @@ menuToggle.addEventListener('click', () => {
   menuToggle.setAttribute('aria-label', opening ? 'Close navigation menu' : 'Open navigation menu');
 });
 document.addEventListener('keydown', event => {
-  if (event.key === 'Escape' && !mobileNav.hidden) {
+  if (event.key !== 'Escape') return;
+  const openDropdown = productDropdowns.find(dropdown => dropdown.open);
+  if (openDropdown) {
+    closeProductDropdowns();
+    openDropdown.querySelector('summary').focus();
+  } else if (!mobileNav.hidden) {
     closeMenu();
     menuToggle.focus();
   }
 });
 document.addEventListener('click', event => {
   if (!event.target.closest('.navbar')) closeMenu();
+  else if (!event.target.closest('.nav-disclosure')) closeProductDropdowns();
 });
 const navigationContent = {
-  indoor: {title:'Indoor', html:'<p>Window treatments for your home.</p>'},
-  outdoor: {title:'Outdoor', html:'<p>Shade for your outdoor space.</p>'},
   services: {title:'Services', html:'<p>Indoor window treatments and outdoor shade in the Tampa Bay area.</p>'},
   about: {title:'Sunboy Blinds', html:'<p>Professional window treatment experts for the Tampa Bay Area.</p>'},
   'service-area': {title:'Service Area', html:'<p>Serving the Tampa Bay Area.</p>'}
