@@ -25,6 +25,7 @@ function ensureSource() {
   }
 }
 function syncPlayback() {
+  if (!background) return;
   if (wantsMotion && heroVisible && !document.hidden && !dialog.open && !infoDialog.open) {
     ensureSource();
     background.play().catch(updateMotionLabel);
@@ -58,7 +59,7 @@ document.querySelectorAll('[data-open-film]').forEach(button => button.addEventL
   dialogTrigger = button;
   if (!film.hasAttribute('src')) film.src = '/assets/hero-desktop.mp4';
   dialog.showModal();
-  background.pause();
+  background?.pause();
   film.play().catch(() => {});
 }));
 document.querySelector('#close-film')?.addEventListener('click', () => dialog.close());
@@ -110,7 +111,7 @@ document.querySelectorAll('[data-open-info]').forEach(button => button.addEventL
   document.querySelector('#info-title').textContent = content.title;
   document.querySelector('#info-content').innerHTML = content.html;
   infoDialog.showModal();
-  background.pause();
+  background?.pause();
 }));
 document.querySelector('#close-info').addEventListener('click', () => infoDialog.close());
 infoDialog.addEventListener('close', () => {
@@ -120,7 +121,7 @@ infoDialog.addEventListener('close', () => {
 
 // Until the consultation destination is supplied, keep the visual form local.
 // The disabled submit control and submit guard prevent sending personal data.
-document.querySelector('#consultation-form').addEventListener('submit', event => {
+document.querySelector('#consultation-form')?.addEventListener('submit', event => {
   event.preventDefault();
 });
 
@@ -128,11 +129,14 @@ const sunPendant = document.querySelector('.section-pendant');
 let sunIsVisible = false;
 
 function syncSunMotion() {
+  if (!sunPendant) return;
   sunPendant.dataset.sunPlaying = String(wantsMotion && sunIsVisible && !document.hidden);
 }
-document.addEventListener('visibilitychange', syncSunMotion);
-new IntersectionObserver(([entry]) => {
-  sunIsVisible = entry.isIntersecting;
+if (sunPendant) {
+  document.addEventListener('visibilitychange', syncSunMotion);
+  new IntersectionObserver(([entry]) => {
+    sunIsVisible = entry.isIntersecting;
+    syncSunMotion();
+  }, {threshold:0.1}).observe(sunPendant);
   syncSunMotion();
-}, {threshold:0.1}).observe(sunPendant);
-syncSunMotion();
+}

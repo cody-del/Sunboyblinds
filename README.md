@@ -1,4 +1,4 @@
-# Sunboy Blinds hero
+# Sunboy Blinds website
 
 Buildless HTML, CSS and JavaScript. Serve `dist/` with a static HTTP server.
 
@@ -6,9 +6,9 @@ The navbar uses the user-supplied sunboy-wordmark-blue.svg, displayed in a conta
 
 The desktop/mobile videos and posters were copied from the retired John Crawford hero in `owner-copy-work/dist/assets`. That project was only read. Source edit: `20261017_120924.mp4` and `20261017_120958.mp4`, kitchen/living/dining montage. The November 4 replacement video was not used.
 
-The prototype includes a hero, navigation, and a trust-and-consultation section. The navigation has Indoor, Outdoor, Services, About and Service Area detail panels, plus a flat logo-blue Book a Consultation link to the homepage consultation form. The consultation form is a local front-end preview; no submission destination is configured. The centered, two-line H1 and Tampa Bay service area are supplied by the user. The accessibility route provides practical controls information. Public assistance contact details have not been supplied.
+The site includes a homepage, a dedicated /contact/ consultation page, and an accessibility page. The navigation has Indoor, Outdoor, Services, About and Service Area detail panels, plus a flat logo-blue Book a Consultation link. Homepage and footer consultation links lead to /contact/; on the contact page, the navbar link moves to the form. The consultation form is a local front-end preview; no submission destination is configured. The centered, two-line H1 and Tampa Bay service area are supplied by the user. The accessibility route provides practical controls information. Public assistance contact details have not been supplied.
 
-The Book a Consultation CTA links to the new form section. Call Sunboy remains disabled until a phone number is supplied. The requested five-star Google and Facebook badges are design treatments; no profile URLs, verified ratings or review counts are supplied. The badges are not linked. This is an owner-private design preview.
+The Book a Consultation CTAs link to the contact page. Call Sunboy remains disabled until a phone number is supplied. The requested five-star Google and Facebook badges are design treatments; no profile URLs, verified ratings or review counts are supplied. The badges are not linked. The site is published on Netlify from GitHub main.
 
 Page typography uses the self-hosted Manrope variable font, sourced from Google Fonts, for the hero, navigation, trust section, form and interface copy. Its OFL license is included in dist/assets/fonts/. The hero uses weight 800, the consultation heading uses 700, and trust points, labels and navigation use 600. The navbar collapses at 960px. The hero headline remains centered on two lines.
 
@@ -16,7 +16,7 @@ The section pendant is the supplied sunboy-badge-blue SVG with a white circle in
 
 Trust points: Professional installation, Quick turnaround times, and No subcontractors were supplied by the user. The tentative satisfaction guarantee was rendered as “Your satisfaction comes first”; no warranty terms or turnaround duration were invented.
 
-The homepage form has exactly three labeled fields: full name, email and phone, with autocomplete attributes and native validation. Its button reads “Request Consultation.” The submit control is disabled and a submit handler prevents navigation until a real destination is supplied. It does not store, send, or claim to submit requests.
+The homepage and contact-page forms each have exactly three labeled fields: full name, email and phone, with autocomplete attributes and native validation. Its button reads “Request Consultation.” The submit control is disabled and a submit handler prevents navigation until a real destination is supplied. The user explicitly deferred form delivery on November 19, 2026. Neither form stores, sends, or claims to submit requests.
 
 The entire consultation section and form panel now use the exact logo blue (#6DB2E4), with dark ink labels and white fields. Its submit button is navy #15384D with white text.
 
@@ -32,6 +32,8 @@ The section heading displays the supplied lettering in navy #15384D via sunboy-c
 
 The homepage product section contains Shades, Blinds, Shutters and Exterior Shades in a four-column desktop row and a two-column mobile grid. Real product photographs from the Graber manufacturer galleries replace the original SVG illustrations, with category names in HTML. Photo sources are recorded in product-photo-sources.json; the photos are category examples, not Sunboy installation claims. The section is informational; no product destinations are implied. Netlify publishes dist automatically from GitHub main.
 
-A shared classic navy footer appears on the homepage and accessibility page. It includes the supplied logo rendered white with CSS, product anchors, existing-page navigation, a consultation CTA and a copyright/accessibility row. Phone, email, street address, social profiles and policy links are omitted because no verified destinations have been supplied.
+A shared classic navy footer appears on the homepage, contact page and accessibility page. It includes the supplied logo rendered white with CSS, product anchors, existing-page navigation, a consultation CTA and a copyright/accessibility row. Phone, email, street address, social profiles and policy links are omitted because no verified destinations have been supplied.
 
 The navbar is white with the original blue logo and navy text, including the mobile menu and accessibility-page header. The blue buttons in the navbar, hero and footer all use the same flat logo blue #6DB2E4 through the shared --sky variable, including hover/active states. The form submit button uses navy #15384D with white text.
+
+The contact page uses the same exact logo blue, navy, white navbar, Manrope typography, illustrated trust icons and classic footer. A navy HTML H1 and concise trust list sit beside a white form card. The original Sunboy sunseal is static within the card, where its blue artwork remains visible on white. The responsive layout becomes one column on mobile. Only Full name has a visible asterisk, matching the approved homepage labels. All heading and form text is HTML. No unverified phone, email, address, response time or appointment confirmation is added. Shared navigation JavaScript safely skips homepage-only video and pendant behavior on /contact/.
