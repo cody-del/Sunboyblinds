@@ -534,11 +534,20 @@
       "title": "Shutters",
       "url": "/shutters/",
       "type": "product_category",
-      "status": "conditional",
+      "status": "live",
       "parent_id": "home",
-      "phase": "offering_confirmation",
-      "scope": "shared_catalog",
-      "publish_when": "Reconfirm the offering. Shutters appear in the earlier approved homepage row but were absent from the latest detailed product list."
+      "phase": "current",
+      "scope": "shared_catalog"
+    },
+    {
+      "id": "plantation-shutters",
+      "title": "Plantation Shutters",
+      "url": "/shutters/plantation-shutters/",
+      "type": "product",
+      "status": "live",
+      "parent_id": "shutters",
+      "phase": "current",
+      "scope": "shared_catalog"
     },
     {
       "id": "pinellas-county-fl",

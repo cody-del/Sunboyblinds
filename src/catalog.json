@@ -19,6 +19,15 @@
       "body": "Look at the shape of the opening, the light you want to let in, and how often you use the window or door. A free in-home consultation gives us a chance to discuss those details in your Tampa Bay home before professional installation."
     },
     {
+      "slug": "shutters",
+      "title": "Shutters",
+      "image": "shutters.webp",
+      "alt": "White plantation shutters in a home office.",
+      "intro": "Explore plantation shutters for your Tampa Bay home. Compare the look of the louvers, frames, and finishes during a free in-home consultation.",
+      "heading": "A frame for your windows.",
+      "body": "Start with the way your windows open and how you use the room. We can help you consider light, privacy, and the fit of the shutter panels."
+    },
+    {
       "slug": "drapes",
       "title": "Drapes",
       "image": null,
@@ -196,6 +205,24 @@
       ],
       "related": [],
       "source": "https://www.phantomscreens.com/retractable-screens/motorized-screens/"
+    },
+    {
+      "slug": "plantation-shutters",
+      "category": "shutters",
+      "title": "Plantation Shutters",
+      "image": "shutters.webp",
+      "alt": "White plantation shutters in a home office.",
+      "summary": "Interior shutters with adjustable louvers.",
+      "intro": "Plantation shutters frame the window with panels and adjustable louvers. Talk through the look and fit for your home during a free in-home consultation.",
+      "heading": "Choose the details around the window.",
+      "body": "Consider how the louvers look with your trim and furnishings, along with the space the panels need to open. Your consultation is a chance to look at those details in the room.",
+      "consider": [
+        "Louver size and the view outside",
+        "Frame style beside your window trim",
+        "Room to open the panels"
+      ],
+      "related": [],
+      "source": "https://www.graberblinds.com/window-treatments/shutters/composite-shutters/"
     },
     {
       "slug": "smartdrape",

@@ -1,6 +1,6 @@
 # Sunboy website architecture
 
-Proposed structure, November 19, 2026. This is a plan and an unpublished page scaffold. The website now has 20 HTML routes: 15 indexable pages and five noindex layout previews for Service Area and the four counties. Editorial outlines stay outside `dist/`, Netlify's publish directory.
+Proposed structure, November 19, 2026. This is a plan and an unpublished page scaffold. The website now has 22 HTML routes: 17 indexable pages and five noindex layout previews for Service Area and the four counties. Editorial outlines stay outside `dist/`, Netlify's publish directory.
 
 ## Recommended foundation
 
@@ -17,13 +17,14 @@ flowchart TD
     Brand --> Locations["Locations: local operating teams"]
     Catalog --> Shades["Shades and individual products"]
     Catalog --> Blinds["Blinds and individual products"]
+    Catalog --> Shutters["Shutters and Plantation Shutters"]
     Catalog --> Drapes["Drapes and SmartDrape"]
     Locations --> Tampa["Tampa Bay market record"]
     Locations --> Future["Future real operating markets"]
     Coverage -. "assigned to an operating market" .-> Tampa
 ```
 
-The diagram describes relationships, not a sequence of clicks. The dropdown continues to offer direct links to categories and products.
+The diagram describes relationships, not a sequence of clicks. The dropdown continues to offer direct links to categories and products. Indoor uses one aligned four-column desktop panel for Shades, Blinds, Shutters, and Drapes; mobile groups stack in the same order.
 
 ## Pages to build next
 
@@ -55,6 +56,7 @@ Keep the existing category and product URLs:
 
 - `/shades/` with Roller, Solar, Honeycomb, Woven Wood, and Roman Shade pages.
 - `/blinds/` with Horizontal and Vertical Blind pages.
+- `/shutters/` with a Plantation Shutters page at `/shutters/plantation-shutters/`.
 - `/drapes/` links to the existing `/indoor/smartdrape/` product page.
 - `/outdoor/exterior-retractable-screens/`.
 
@@ -62,7 +64,7 @@ The existing homepage, contact page, accessibility page, catalog pages, and Smar
 
 Each future market can reference its available product IDs. Product information stays centrally maintained. If a particular local offering later merits a separate page, decide that from its actual purpose and evidence rather than generating a city-by-product grid by default.
 
-Shutters remain a confirmation item: they appear in the earlier approved homepage row, but were absent from the latest detailed product lineup. A `/shutters/` route is reserved conditionally; no new offering page is published.
+The owner confirmed Plantation Shutters as the Shutters offering. The Shutters category and Plantation Shutters product page are published and linked from the Indoor dropdown.
 
 ## Local operations and service areas
 
@@ -138,7 +140,7 @@ If a hosted review environment is needed later, use a controlled preview. A `noi
 
 ## Source files and validation
 
-- [routes.json](routes.json): 15 indexable routes, five published noindex previews, other proposed pages, statuses, parent relationships, reserved patterns and navigation plan.
+- [routes.json](routes.json): 17 indexable routes, five published noindex previews, other proposed pages, statuses, parent relationships, reserved patterns and navigation plan.
 - [markets.json](markets.json): initial operating-market record and future routing requirements.
 - [drafts/](drafts/): twelve unpublished page outlines, including four coverage hubs.
 

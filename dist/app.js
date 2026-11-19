@@ -76,14 +76,29 @@ dialog?.addEventListener('close', () => {
 });
 
 const productDropdowns = [...document.querySelectorAll('.nav-disclosure')];
+const navbar = document.querySelector('.navbar');
+const desktopNavigation = matchMedia('(min-width: 961px)');
+function syncNavPanelSpace() {
+  const panel = desktopNavigation.matches
+    ? document.querySelector('.desktop-nav .nav-disclosure[open] > .nav-product-dropdown')
+    : (mobileNav.hidden ? null : mobileNav);
+  const height = Math.ceil(panel?.getBoundingClientRect().height || 0);
+  document.documentElement.style.setProperty('--nav-panel-space', `${height}px`);
+  document.body.classList.toggle('nav-panel-open', height > 0);
+  navbar.classList.toggle('nav-expanded', height > 0);
+}
 function closeProductDropdowns(except) {
   productDropdowns.forEach(dropdown => {
     if (dropdown !== except) dropdown.open = false;
   });
+  syncNavPanelSpace();
 }
 productDropdowns.forEach(dropdown => dropdown.addEventListener('toggle', () => {
   if (dropdown.open) closeProductDropdowns(dropdown);
+  syncNavPanelSpace();
 }));
+const navPanelResize = new ResizeObserver(syncNavPanelSpace);
+document.querySelectorAll('.nav-product-dropdown, #mobile-nav').forEach(panel => navPanelResize.observe(panel));
 document.addEventListener('focusin', event => {
   closeProductDropdowns(event.target.closest('.nav-disclosure'));
 });
@@ -95,12 +110,14 @@ function closeMenu() {
   mobileNav.hidden = true;
   menuToggle.setAttribute('aria-expanded', 'false');
   menuToggle.setAttribute('aria-label', 'Open navigation menu');
+  syncNavPanelSpace();
 }
 menuToggle.addEventListener('click', () => {
   const opening = mobileNav.hidden;
   mobileNav.hidden = !opening;
   menuToggle.setAttribute('aria-expanded', String(opening));
   menuToggle.setAttribute('aria-label', opening ? 'Close navigation menu' : 'Open navigation menu');
+  syncNavPanelSpace();
 });
 document.addEventListener('keydown', event => {
   if (event.key !== 'Escape') return;

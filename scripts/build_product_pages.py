@@ -9,7 +9,7 @@ from service_area_pages import render as render_service_areas
 ROOT = Path(__file__).resolve().parents[1]
 DIST = ROOT / 'dist'
 ORIGIN = 'https://sunboyblinds.netlify.app'
-VERSION = 'roman-shades-1'
+VERSION = 'plantation-shutters-1'
 DATA = json.loads((ROOT / 'src/catalog.json').read_text())
 PRODUCTS = {item['slug']: item for item in DATA['products']}
 HEADER = (ROOT / 'src/partials/header.html').read_text().strip()
