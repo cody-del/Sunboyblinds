@@ -1,7 +1,7 @@
 # Pinellas County Service Area
 
 Proposed URL: `/service-area/pinellas-county-fl/`
-Status: unpublished draft. Phase: county_templates.
+Layout status: published preview with noindex, follow. This editorial outline remains outside the public build.
 Operating market ID: `tampa-bay-fl`.
 
 Confirmed launch coverage: Pinellas County, Florida. This is part of the initial Sunboy operation, not a separate office or franchise.

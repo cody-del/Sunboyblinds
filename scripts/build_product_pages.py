@@ -1,13 +1,15 @@
 """Render the catalog and synchronize shared navigation without dependencies."""
 from pathlib import Path
 from html import escape
+from html.parser import HTMLParser
 import json
 import re
+from service_area_pages import render as render_service_areas
 
 ROOT = Path(__file__).resolve().parents[1]
 DIST = ROOT / 'dist'
 ORIGIN = 'https://sunboyblinds.netlify.app'
-VERSION = 'smartdrape-1'
+VERSION = 'service-area-previews-1'
 DATA = json.loads((ROOT / 'src/catalog.json').read_text())
 PRODUCTS = {item['slug']: item for item in DATA['products']}
 HEADER = (ROOT / 'src/partials/header.html').read_text().strip()
@@ -54,7 +56,11 @@ CTA = '''<section class="catalog-consultation" aria-labelledby="catalog-cta-titl
 </section>'''
 
 
-def document(title, description, path, content, schema):
+def document(title, description, path, content, schema, preview=False, body_class='catalog-page', cta=CTA):
+    robots = '<meta name="robots" content="noindex, follow">' if preview else ''
+    page_header = HEADER
+    if path == '/service-area/':
+        page_header = page_header.replace('href="/service-area/"', 'href="/service-area/" aria-current="page"')
     return f'''<!doctype html>
 <html lang="en">
 <head>
@@ -63,16 +69,17 @@ def document(title, description, path, content, schema):
   <meta name="theme-color" content="#6db2e4">
   <title>{escape(title)} — Sunboy Blinds</title>
   <meta name="description" content="{escape(description)}">
+{robots}
   <link rel="canonical" href="{ORIGIN}{path}">
   <link rel="preload" href="/assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/styles.css?v={VERSION}">
   <script src="/app.js?v={VERSION}" defer></script>
   <script type="application/ld+json">{schema}</script>
 </head>
-<body class="catalog-page" id="top">
+<body class="{escape(body_class)}" id="top">
   <a class="skip-link" href="#main">Skip to content</a>
-  {HEADER}
-  <main id="main">{content}{CTA}</main>
+  {page_header}
+  <main id="main">{content}{cta}</main>
   {FOOTER}
   {INFO}
 </body>
@@ -118,6 +125,9 @@ for item in DATA['products']:
     description = f'{item["title"]} for Tampa Bay homes. {item["summary"]} Schedule a free in-home consultation with Sunboy Blinds.'
     save(path, document(f'{item["title"]} in Tampa Bay', description, path, content, schema))
 
+coverage_count = render_service_areas(document, save, breadcrumbs,
+    json.loads((ROOT / 'architecture/routes.json').read_text()), DATA)
+
 # Keep the authored homepage/contact content while updating shared navigation.
 for relative in ['index.html', 'contact/index.html', 'accessibility/index.html']:
     target = DIST / relative
@@ -139,9 +149,28 @@ for relative in ['index.html', 'contact/index.html', 'accessibility/index.html']
         text = text.replace('</head>', canonical + '\n</head>')
     target.write_text(text)
 
-paths = ['/' + str(p.relative_to(DIST).parent).replace('.', '').strip('/') + '/' for p in DIST.rglob('index.html')]
+class RobotsParser(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.noindex = False
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        if tag == 'meta' and attrs.get('name', '').lower() in ('robots', 'googlebot'):
+            tokens = re.split(r'[,\s]+', attrs.get('content', '').lower())
+            self.noindex |= 'noindex' in tokens or 'none' in tokens
+
+
+def indexable(path):
+    parser = RobotsParser()
+    parser.feed(path.read_text())
+    return not parser.noindex
+
+
+paths = ['/' + str(p.relative_to(DIST).parent).replace('.', '').strip('/') + '/'
+         for p in DIST.rglob('index.html') if indexable(p)]
 paths = sorted(set('/' if path == '//' else path for path in paths))
 urls = ''.join(f'<url><loc>{ORIGIN}{escape(path)}</loc></url>\n' for path in paths)
 (DIST / 'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + urls + '</urlset>\n')
 (DIST / 'robots.txt').write_text(f'User-agent: *\nAllow: /\n\nSitemap: {ORIGIN}/sitemap.xml\n')
-print(f'Rendered {len(DATA["categories"])} category pages and {len(PRODUCTS)} product pages; sitemap has {len(paths)} URLs.')
+print(f'Rendered {len(DATA["categories"])} category pages, {len(PRODUCTS)} product pages and {coverage_count} service-area layouts; sitemap has {len(paths)} indexable URLs.')

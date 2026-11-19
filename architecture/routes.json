@@ -13,7 +13,9 @@
     "include_in_live_sitemap": [
       "live"
     ],
-    "new_drafts_published_by_this_change": false
+    "new_drafts_published_by_this_change": true,
+    "layout_previews_are_public": true,
+    "layout_previews_robots": "noindex, follow"
   },
   "markets_file": "architecture/markets.json",
   "default_market_id": "tampa-bay-fl",
@@ -247,7 +249,7 @@
       "title": "Service Area",
       "url": "/service-area/",
       "type": "coverage_directory",
-      "status": "draft",
+      "status": "preview",
       "parent_id": "home",
       "phase": "next_templates",
       "scope": "brand",
@@ -284,7 +286,9 @@
           "label": "Consultation link",
           "content": null
         }
-      ]
+      ],
+      "robots": "noindex, follow",
+      "content_status": "placeholder"
     },
     {
       "id": "our-work",
@@ -521,7 +525,7 @@
       "title": "Pinellas County Service Area",
       "url": "/service-area/pinellas-county-fl/",
       "type": "coverage_county",
-      "status": "draft",
+      "status": "preview",
       "parent_id": "service-area",
       "phase": "county_templates",
       "scope": "coverage",
@@ -565,14 +569,16 @@
           "label": "Consultation link",
           "content": null
         }
-      ]
+      ],
+      "robots": "noindex, follow",
+      "content_status": "placeholder"
     },
     {
       "id": "hillsborough-county-fl",
       "title": "Hillsborough County Service Area",
       "url": "/service-area/hillsborough-county-fl/",
       "type": "coverage_county",
-      "status": "draft",
+      "status": "preview",
       "parent_id": "service-area",
       "phase": "county_templates",
       "scope": "coverage",
@@ -616,14 +622,16 @@
           "label": "Consultation link",
           "content": null
         }
-      ]
+      ],
+      "robots": "noindex, follow",
+      "content_status": "placeholder"
     },
     {
       "id": "manatee-county-fl",
       "title": "Manatee County Service Area",
       "url": "/service-area/manatee-county-fl/",
       "type": "coverage_county",
-      "status": "draft",
+      "status": "preview",
       "parent_id": "service-area",
       "phase": "county_templates",
       "scope": "coverage",
@@ -667,14 +675,16 @@
           "label": "Consultation link",
           "content": null
         }
-      ]
+      ],
+      "robots": "noindex, follow",
+      "content_status": "placeholder"
     },
     {
       "id": "sarasota-county-fl",
       "title": "Sarasota County Service Area",
       "url": "/service-area/sarasota-county-fl/",
       "type": "coverage_county",
-      "status": "draft",
+      "status": "preview",
       "parent_id": "service-area",
       "phase": "county_templates",
       "scope": "coverage",
@@ -718,7 +728,9 @@
           "label": "Consultation link",
           "content": null
         }
-      ]
+      ],
+      "robots": "noindex, follow",
+      "content_status": "placeholder"
     }
   ],
   "route_templates": [
@@ -808,7 +820,7 @@
       "Service Area",
       "Book a Consultation"
     ],
-    "next": "Convert Services, About and Service Area from dialogs to normal page links once the new page layouts/content are ready.",
+    "next": "Service Area now opens a noindex layout preview. Convert Services and About to normal page links when their page layouts are ready.",
     "future": "Add a location selector or Find a Location only when multiple markets are actually operating. Keep the shared product navigation."
   },
   "scaling_rules": [

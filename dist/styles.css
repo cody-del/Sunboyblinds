@@ -17,6 +17,8 @@ button:focus-visible,a:focus-visible{outline:3px solid #f5c85a;outline-offset:6p
 .desktop-nav{display:flex;align-items:center;justify-content:center;gap:clamp(22px,2.2vw,36px);margin-left:auto;margin-right:auto}
 .nav-item{background:transparent;color:inherit;font-size:15px;font-weight:600;letter-spacing:0;line-height:1.4;padding:14px 0;min-height:44px;white-space:nowrap;text-decoration:none;text-underline-offset:6px}
 .nav-item:hover{text-decoration:underline}
+.nav-item[aria-current=page]{text-decoration:underline;text-decoration-color:var(--sky);text-decoration-thickness:2px}
+.navbar .nav-item:focus-visible{outline-color:var(--ink)}
 .nav-disclosure{position:relative}
 .nav-disclosure>summary{display:flex;align-items:center;gap:9px;list-style:none;cursor:pointer}
 .nav-disclosure>summary::-webkit-details-marker{display:none}
@@ -260,3 +262,41 @@ dialog{padding:14px;border-radius:14px}
 @media(max-width:960px){.catalog-hero-inner{gap:40px}.catalog-hero{padding-top:124px}.catalog-details{gap:48px}.catalog-section-intro{gap:40px}}
 @media(max-width:780px){.catalog-hero{padding:120px 28px 44px}.catalog-hero-inner{grid-template-columns:1fr;max-width:560px;gap:32px}.catalog-intro>p{font-size:16px;max-width:none}.breadcrumbs{margin-bottom:22px}.catalog-content,.catalog-related{width:calc(100% - 56px);max-width:560px;padding-top:44px;padding-bottom:44px}.catalog-section-intro,.catalog-details{grid-template-columns:1fr;gap:24px}.catalog-grid,.catalog-grid-three{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 20px;margin-top:28px}.catalog-card h3{font-size:18px}.catalog-consider{border-left:0;border-top:1px solid #dbe6ec;padding:24px 0 0}.catalog-related{padding-top:0}.catalog-consultation{align-items:flex-start;flex-direction:column;padding:40px 28px;gap:24px}.catalog-consultation h2{font-size:30px}.catalog-hero-solo .catalog-hero-inner{max-width:560px}}
 @media(max-width:420px){.catalog-hero{padding:112px 22px 36px}.catalog-intro>p{font-size:15px;margin:20px 0}.catalog-photo img{border-radius:16px}.catalog-content,.catalog-related{width:calc(100% - 44px)}.catalog-content h2,.catalog-related h2{font-size:28px}.catalog-grid{gap:24px 18px}.catalog-card h3{font-size:17px;margin-top:14px}.catalog-card p{font-size:13px}.catalog-consultation{padding:36px 22px}.catalog-consultation h2{font-size:28px}.catalog-consultation .catalog-button{width:100%}}
+
+.coverage-county-menu{background:#fff;border-radius:24px;padding:32px}
+.coverage-menu-heading{display:flex;align-items:center;gap:18px;margin-bottom:18px}
+.coverage-menu-heading img{display:block;width:72px;height:72px;flex-shrink:0}
+.coverage-menu-heading h2{font-size:26px;font-weight:700;line-height:1.2;letter-spacing:-.035em;margin:0}
+.coverage-county-menu ul{list-style:none;padding:0;margin:0}
+.coverage-county-menu li+li{border-top:1px solid #dbe6ec}
+.coverage-county-menu a{display:flex;flex-direction:column;align-items:flex-start;gap:5px;padding:17px 0;text-decoration:none;font-size:17px;font-weight:700;line-height:1.4;text-underline-offset:4px}
+.coverage-county-menu a:hover>span:first-child{text-decoration:underline}
+.coverage-county-menu .county-link-detail{font-size:12px;font-weight:500}
+.coverage-hero-placeholder{aspect-ratio:8/7;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:20px;background:#fff;border-radius:20px;padding:32px;text-align:center}
+.coverage-hero-placeholder img{display:block;width:112px;height:112px}
+.coverage-hero-placeholder span{font-size:14px;font-weight:600;line-height:1.5}
+.coverage-product-groups{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px;margin-top:32px}
+.coverage-product-groups>div{border-top:1px solid #dbe6ec;padding-top:20px;min-width:0}
+.coverage-product-groups h3{font-size:20px;font-weight:700;line-height:1.35;letter-spacing:-.025em;margin:0 0 14px}
+.coverage-product-groups h3 a{text-decoration:none;text-underline-offset:4px}
+.coverage-product-groups h3 a:hover{text-decoration:underline}
+.coverage-product-groups ul{list-style:none;padding:0;margin:0}
+.coverage-product-groups li a{display:inline-block;padding:7px 0;text-decoration:none;font-size:14px;line-height:1.5;text-underline-offset:4px}
+.coverage-product-groups li a:hover{text-decoration:underline}
+.coverage-draft-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;padding-top:0}
+.coverage-draft-block{border:1px solid #dbe6ec;border-radius:18px;padding:28px;background:#f7fafc;min-width:0}
+.coverage-draft-block h2{font-size:25px;margin:0 0 16px}
+.coverage-draft-block p{font-size:14px}
+.coverage-placeholder-lines{display:flex;flex-direction:column;gap:12px;margin-top:24px}
+.coverage-placeholder-lines span{height:9px;border-radius:20px;background:#e1ebf2;width:90%}
+.coverage-placeholder-lines span:last-child{width:64%}
+.coverage-projects{padding-top:0}
+.coverage-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:28px}
+.coverage-photo-slot{aspect-ratio:4/3;display:grid;place-items:center;text-align:center;border:1px dashed #8ba7b7;border-radius:14px;background:#f2f7fa;padding:22px;font-size:14px;font-weight:500;line-height:1.5}
+.coverage-area-navigation{width:min(1120px,calc(100% - 64px));margin:0 auto;padding:0 0 48px;font-size:13px;line-height:1.5}
+.coverage-area-navigation a{display:inline-block;padding:8px 0;text-underline-offset:4px}
+.coverage-back-link{font-weight:700}
+.coverage-area-navigation ul{display:flex;flex-wrap:wrap;gap:8px 28px;list-style:none;padding:0;margin:12px 0 0}
+.coverage-area-navigation [aria-current=page]{font-weight:700;text-decoration-thickness:2px}
+@media(max-width:780px){.coverage-county-menu{padding:28px}.coverage-product-groups{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}.coverage-draft-grid{grid-template-columns:1fr}.coverage-gallery{grid-template-columns:1fr;gap:18px}.coverage-photo-slot{aspect-ratio:16/9}.coverage-area-navigation{width:calc(100% - 56px);max-width:560px;padding-bottom:36px}.coverage-area-navigation ul{gap:4px 24px}}
+@media(max-width:420px){.coverage-county-menu{padding:24px 22px;border-radius:20px}.coverage-menu-heading{gap:12px}.coverage-menu-heading img{width:64px;height:64px}.coverage-menu-heading h2{font-size:23px}.coverage-county-menu a{font-size:16px}.coverage-hero-placeholder{border-radius:16px}.coverage-product-groups{grid-template-columns:1fr;gap:26px}.coverage-product-groups h3{font-size:20px}.coverage-draft-block{padding:24px}.coverage-draft-block h2{font-size:24px}.coverage-area-navigation{width:calc(100% - 44px)}.coverage-area-navigation ul{flex-direction:column;gap:0}}

@@ -1,6 +1,6 @@
 # Sunboy website architecture
 
-Proposed structure, November 19, 2026. This is a plan and an unpublished page scaffold. The live website still has 13 routes. The new outlines live outside `dist/`, Netlify's publish directory.
+Proposed structure, November 19, 2026. This is a plan and an unpublished page scaffold. The website now has 18 HTML routes: 13 indexable pages and five noindex layout previews for Service Area and the four counties. Editorial outlines stay outside `dist/`, Netlify's publish directory.
 
 ## Recommended foundation
 
@@ -30,15 +30,15 @@ The diagram describes relationships, not a sequence of clicks. The dropdown cont
 | --- | --- | --- | --- |
 | Services | `/services/` | Explain the confirmed consultation and installation offer | Unpublished outline |
 | About | `/about/` | Introduce the real company and team | Unpublished outline |
-| Service Area | `/service-area/` | Explain confirmed four-county coverage | Unpublished outline; counties confirmed |
+| Service Area | `/service-area/` | Explain confirmed four-county coverage | Published layout preview; noindex |
 | Our Work | `/our-work/` | Show actual completed Sunboy projects | Unpublished outline; original projects needed |
 | Reviews | `/reviews/` | Present authentic reviews and their sources | Unpublished outline; verified sources needed |
 | FAQs | `/faqs/` | Answer real consultation, installation and product questions | Unpublished outline |
 | Privacy | `/privacy/` | Explain the actual forms, providers and data use | Unpublished outline; complete around the chosen setup |
 
-Services, About, and Service Area are the first priority because they already appear in the navigation as detail dialogs. Once their page layouts and useful content are ready, those menu items should become normal page links.
+Service Area now opens its page layout through a normal navigation link. The county selector opens four matching county layouts. Services and About remain the next page templates to build; their navigation items still use detail dialogs.
 
-The draft files contain section placeholders and inputs needed, rather than finished marketing copy:
+The source outlines contain section placeholders and inputs needed. The owner has authorized the five service-area layouts as publicly viewable noindex previews:
 
 - [Services outline](drafts/services.md)
 - [About outline](drafts/about.md)
@@ -93,7 +93,7 @@ The owner confirmed these four Florida counties on November 19, 2026. “Hillsbo
 | Manatee County | `/service-area/manatee-county-fl/` | [Draft outline](drafts/manatee-county-fl.md) |
 | Sarasota County | `/service-area/sarasota-county-fl/` | [Draft outline](drafts/sarasota-county-fl.md) |
 
-These are county coverage pages for the same initial operation. They do not establish four branches. Keep the pages unpublished while they contain placeholders, then add genuinely useful local material before launch. City pages can be considered later without duplicating every product across every city.
+These are county coverage pages for the same initial operation. They do not establish four branches. The owner requested placeholder layouts, so the four county pages and Service Area overview are now published for review with noindex, follow and excluded from the XML sitemap. Add useful local material before promoting them to indexable pages. City pages can be considered later without duplicating every product across every city.
 
 ## Data that allows expansion
 
@@ -123,22 +123,22 @@ The business can start with one local operation. Reserving these routes does not
 
 ## Placeholder and publishing approach
 
-Keep new outlines and placeholder content outside the public build. Publish a page when it has a useful purpose and enough verified content to serve that purpose. Only live pages belong in public navigation and the XML sitemap.
+Keep unbuilt outlines outside the public build. Five owner-authorized layout previews are now available through normal links for review; each has noindex, follow and is excluded from the XML sitemap. The preview status is separate from both live/indexable pages and unbuilt drafts. Promote a preview to live only when the placeholder sections have been completed and its indexing directive is updated. All remaining drafts stay unpublished.
 
-If a hosted review environment is needed later, use a controlled preview. A `noindex` rule can control search indexing when Google can crawl it; it is not access control, and a robots.txt block can prevent Google from seeing the rule. No index-control or hosting settings were changed in this phase. [Google's indexing guidance](https://developers.google.com/search/docs/crawling-indexing/block-indexing)
+If a hosted review environment is needed later, use a controlled preview. A `noindex` rule can control search indexing when Google can crawl it; it is not access control, and a robots.txt block can prevent Google from seeing the rule. The five review layouts use per-page noindex; robots.txt still permits crawling so search engines can see that directive. [Google's indexing guidance](https://developers.google.com/search/docs/crawling-indexing/block-indexing)
 
 ## Next steps
 
 1. Confirm the final business domain. The current configured origin is the Netlify subdomain; no business domain has been supplied here. Launch coverage is already confirmed at county level.
-2. Review the page map and build the Services, About, and Service Area layouts from the existing Sunboy design, using the unpublished outlines.
-3. Build the four county coverage templates using the confirmed service area. Add real team/contact information and original projects; select city pages later as useful local material becomes available.
+2. Review the five Service Area/county layout previews, then build Services and About in the same design.
+3. Replace county placeholders with useful local details, actual projects and verified review material; select city pages later as useful local material becomes available.
 4. Complete supporting pages and connect the consultation form when its actual destination is chosen.
 5. Reuse the market template when a real new operation opens. Review shared Tampa Bay-specific wording before introducing a broader brand homepage and catalog presentation.
 
 ## Source files and validation
 
-- [routes.json](routes.json): 13 live routes, proposed pages, statuses, parent relationships, reserved patterns and navigation plan.
+- [routes.json](routes.json): 13 indexable routes, five published noindex previews, other proposed pages, statuses, parent relationships, reserved patterns and navigation plan.
 - [markets.json](markets.json): initial operating-market record and future routing requirements.
 - [drafts/](drafts/): twelve unpublished page outlines, including four county hubs.
 
-Run `python3 scripts/check_site_architecture.py` from the repository root to verify route uniqueness, parent relationships, market references, live-file/sitemap coverage, and exclusion of the new draft routes from the live output. This is a project consistency check; it is not a ranking forecast or a full SEO audit.
+Run `python3 scripts/check_site_architecture.py` from the repository root to verify route uniqueness, parent relationships, market references, live-file/sitemap coverage, exclusion of unbuilt draft routes from live output, and noindex/sitemap exclusion for the five layout previews. This is a project consistency check; it is not a ranking forecast or a full SEO audit.

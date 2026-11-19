@@ -1,7 +1,7 @@
 # Service Area
 
 Proposed URL: `/service-area/`
-Status: unpublished draft. Phase: next_templates.
+Layout status: published preview with noindex, follow. This editorial outline remains outside the public build.
 
 This file is a page outline, not public website copy. It is outside the Netlify publish directory.
 

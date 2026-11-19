@@ -87,7 +87,7 @@ productDropdowns.forEach(dropdown => dropdown.addEventListener('toggle', () => {
 document.addEventListener('focusin', event => {
   closeProductDropdowns(event.target.closest('.nav-disclosure'));
 });
-document.querySelectorAll('.nav-product-dropdown a').forEach(link => link.addEventListener('click', closeMenu));
+document.querySelectorAll('.navbar a').forEach(link => link.addEventListener('click', closeMenu));
 matchMedia('(max-width: 960px)').addEventListener('change', closeMenu);
 
 function closeMenu() {
@@ -96,7 +96,6 @@ function closeMenu() {
   menuToggle.setAttribute('aria-expanded', 'false');
   menuToggle.setAttribute('aria-label', 'Open navigation menu');
 }
-document.querySelector('#nav-consultation-button')?.addEventListener('click', closeMenu);
 menuToggle.addEventListener('click', () => {
   const opening = mobileNav.hidden;
   mobileNav.hidden = !opening;
@@ -120,8 +119,7 @@ document.addEventListener('click', event => {
 });
 const navigationContent = {
   services: {title:'Services', html:'<p>Indoor window treatments and outdoor shade in the Tampa Bay area.</p>'},
-  about: {title:'Sunboy Blinds', html:'<p>Professional window treatment experts for the Tampa Bay Area.</p>'},
-  'service-area': {title:'Service Area', html:'<p>Serving the Tampa Bay Area.</p>'}
+  about: {title:'Sunboy Blinds', html:'<p>Professional window treatment experts for the Tampa Bay Area.</p>'}
 };
 let infoTrigger;
 document.querySelectorAll('[data-open-info]').forEach(button => button.addEventListener('click', () => {
